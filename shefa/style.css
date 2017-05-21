@@ -1,0 +1,206 @@
+
+body{
+      background-color: #EEE;
+}
+
+#menu{
+      position: absolute;
+      top:50%;
+      margin-top: -20px;
+      right:40px;
+      font-size: 20px;
+      color: #FF6150;
+      border: 1px solid #d5d5d5;
+      padding: 4px 13px 2px 15px;
+      border-radius: 10px;
+}
+#menu a{
+      color:#333;
+}
+#menu:hover a{
+      color:#fff;
+}
+#menu:hover {
+      background-color: #13BFB1;
+      color:#fff;
+}
+#menu:active a{
+      color:#767676;
+
+}
+#menu:active .navbar-default{
+      display: block;
+
+}
+#navbg{
+      width: 100%;
+      z-index: 500;
+      background-color: #F6F6F6;
+}
+#navbg.navbar.affix{
+      background-color: rgba(190,151,97,0.15);
+      transition: 3s;
+}
+#navbg.navbar.affix a{
+      color:coral;
+      transition: 1.5s;
+}
+#navbg.navbar.affix a:hover{
+      color:#13BFB1;
+}
+
+.navbar-brand{
+      position: absolute;
+      top: -2.5px;
+}
+
+.navbar-hader ul a:nth-child(n){
+      font-family: 'Lato', sans-serif;
+      font-size:12px;
+      font-weight:300;
+      letter-spacing:2px;
+      padding-top: 35px;
+      margin-bottom: 25px;
+}
+.navbar-hader ul a:nth-child(n):hover{
+      color:#13BFB1;
+}
+
+@media screen and (max-width:1024px) {
+      .navbar-brand img{
+            width: 150px;
+      }
+      .navbar-brand{
+            position: absolute;
+            top: 10px;
+            left:-10px;
+      }
+}
+
+@media screen and (max-width:770px) {
+      .navbar-brand img{
+            width: 100px;
+      }
+      .nav{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-top: -20px;
+            border:0;
+      }
+      .navbar-hader ul a:nth-child(n){
+            padding-top: 0;
+            display: none;
+
+      }
+      .navbar-brand{
+            position: absolute;
+            top: -10px;
+
+      }
+
+}
+@media screen and (min-width:1024px) {
+      .navbar-brand img{
+            width: 200px;
+      }
+      .navbar-brand{
+            /*width: 200px;*/
+            position: absolute;
+            top: 0px;
+      }
+}
+@media screen and (min-width:770px) {
+      #menu{
+            display: none;
+      }
+      }
+      /*********************************************************************************************/
+      /*corucel*/
+      #corus img{
+            display: inline-block;
+      }
+
+      /**********************************************************************************************/
+      /* order cards */
+      .strong{
+            font-weight: bold;
+      }
+#bgrnd{
+      background-color: #F8F8F8;
+}
+#cont{
+      font-family: 'Lato', sans-serif;
+      font-size:15px;
+      font-weight:300;
+      color: #555;
+      margin: 40px 0 40px 0;
+}
+#cont div{
+      background-color:#fff;
+      padding:60px 30px 60px 30px;
+      border:1px solid #EEEEEE;
+}
+#cont div:hover{
+      transform: translateY(-15px);
+      box-shadow: 0 50px 50px 5px #ccc;
+      border:0;
+      z-index: 1;
+}
+#cont a{
+      font-size: 30px;
+      color:#13BFB1;
+      padding: 18px 21px 18px 21px;
+      border:1px solid #EEEEEE;
+      border-radius: 100%;
+      bottom: 25px;
+
+}
+#cont h3{
+      margin:40px 0 25px 0;
+}
+#cont div:hover a{
+      color:white;
+      border:0.25px solid #13BFB1;
+      background-color: #13BFB1;
+}
+/* order cards */
+/*************************************************************************************************************************************/
+/*Prise Elements*/
+.prise{
+      padding:200px 0 0 0;
+}
+
+.bttn{
+      margin-left:0;
+      height: 800px;
+      background: #FFF;
+      font-family: 'Lato', sans-serif;
+      font-size:20px;
+      font-weight:300;
+      /*letter-spacing:2px;*/
+}
+.bttn h2{
+      font-size: 45px;
+      font-weight:300;
+
+}
+.button{
+      font-family: 'Lato', sans-serif;
+      font-size:12px;
+      font-weight:300;
+      letter-spacing:2px;
+      outline:none;
+      border-radius: 0;
+      background-color: #E0E0E0;
+      padding: 15px 27px 15px 27px;
+
+}
+.button:hover{
+      color:#fff;
+      background-color:#13BFB1 ;
+}
+.myicons{
+      color: #13BFB1;
+}

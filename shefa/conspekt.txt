@@ -1,0 +1,22 @@
+GRIDs:
+*column grid ->колонки
+*modular grid ->модули, блоки.
+      |       |       |       |       |       |       |       |       |       |       |       |
+______________________________________________________________________________________________
+
+perfix's bootstrap grid
+-xs- ->extra small
+-sm- ->small
+-md- ->medium
+-lg- ->large
+
+.col
+.row
+
+-д/з добавит в окно форму заказа
+-допилить шаблон
+
+http://www.dragdropsite.com/demo/mpurpose-free-multipurpose-twitter-bootstrap-3-template/
+https://startbootstrap.com/
+https://www.bootstrapzero.com/bootstrap-template/mpurpose
+http://www.free-css.com/template-categories/bootstrap

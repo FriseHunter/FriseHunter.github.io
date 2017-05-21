@@ -1,0 +1,119 @@
+.mynav {
+    font-size: 1.05em;
+    border: 0;
+    background: rgba(155, 155, 155, 0.2) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQYV2NkYGDYzMDAMJORgYHBhwEIABFtAZsBsVKzAAAAAElFTkSuQmCC) repeat;
+    font-weight: bold;
+}
+
+.mynav div {
+    font-weight: 800;
+    line-height: 85px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px
+}
+
+#link li:nth-child(1) a {
+    background-color: rgba(155, 155, 155, 0);
+    color: yellow;
+}
+
+.colbu {
+    color: #333;
+    font-weight: bold;
+    background-color: #FFC400;
+    border-color: #FFC400;
+}
+
+#link a:hover {
+    color: yellow;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+#x {
+    margin-left: 50px;
+    font-size: 1.1em;
+    color: #FFC400;
+}
+
+#Lander {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+header {
+    font-family: 'Oswald', sans-serif;
+}
+
+header .container {
+    color: white;
+    margin-top: 150px
+}
+
+header .container h1 {
+    font-size: 75px;
+    font-weight: 800;
+    line-height: 85px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.xlander-bdvideo {
+    position: absolute;
+    ;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.xlander-bdvideo::before {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQYV2NkYGDYzMDAMJORgYHBhwEIABFtAZsBsVKzAAAAAElFTkSuQmCC) repeat;
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.xlander-bdvideo iframe, .xlander-bdvideo object, .xlander-bdvideo embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#brd {
+    border-radius: 10px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQYV2NkYGDYzMDAMJORgYHBhwEIABFtAZsBsVKzAAAAAElFTkSuQmCC) repeat;
+    z-index: 20;
+}
+
+#brd form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#brd input {
+    color: rgb(150, 150, 150);
+    border-radius: 0;
+}
+
+#brd input:focus {
+    box-shadow: 0 0 1px 1px yellow;
+    outline-color: yellow;
+    border: 1px solid yellow;
+}
