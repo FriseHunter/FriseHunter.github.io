@@ -1,0 +1,60 @@
+#score {
+      text-align: center;
+      color: #B21E22;
+      text-shadow: 0.5px 0.5px grey;
+      position: absolute;
+      left: 150px;
+      border: 2px solid #333;
+      width: 200px;
+      height: 20px;
+}
+
+#scene {
+      background-color: black;
+      font-size: 2em;
+      text-align: center;
+      color: darkgreen;
+      top: 20px;
+      position: relative;
+      width: 500px;
+      height: 500px;
+      border: 5px solid #555;
+}
+
+.empty {
+      width: 48px;
+      height: 48px;
+      border: 1px dotted #999;
+      float: left;
+}
+
+.cherry {
+      width: 48px;
+      height: 48px;
+      border: 1px dotted #999;
+      float: left;
+      background-image: url(img/cherry-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.wall {
+      width: 48px;
+      height: 48px;
+      border: 1px dotted #999;
+      float: left;
+      background-image: url(img/3D-Dirt-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.pac {
+      color: orange;
+      width: 48px;
+      height: 48px;
+      border: 1px dotted #999;
+      float: left;
+      background-image: url(img/Pac-Man-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+}
