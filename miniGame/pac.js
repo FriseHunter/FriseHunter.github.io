@@ -30,16 +30,16 @@
       function init() {
             console.log('init initialising...')
             gdiv = document.body.childNodes[5];
-
+            // addCherry();addCherry();addCherry();
             for (n = parseInt(Math.random() * 5) + 3; n >= 0; n--) {
                   addCherry();
                   addCherry();
                   addCherry();
-
             }
-            addWall();
             addPac();
-            //
+            addWall();
+            addWall();
+            addWall();
 
             show();
       }
@@ -113,6 +113,11 @@
                   showScore.innerText += "Game Over";
                   alert("Game over!!!");
             };
+            if (score > 50) {
+                  var showScore = document.getElementById('score');
+                  showScore.innerText += "  YOU WINS!!!";
+                  alert("  YOU WINS!!!");
+            };
       }
 
       function addPac() {
@@ -134,16 +139,16 @@
             var c = parseInt(9.999 * Math.random());
             var l = parseInt(6 * Math.random() + 2);
             for (n = 0; n <= l; n++) {
-                  grid[r][c + n] = '#';
+                  grid[r][c + n] = '#'
             };
             for (i = 0; i <= l; i++) {
-                  grid[r][c - i] = '#';
+                  grid[r][c - i] = '#'
             };
             for (j = 0; j <= l; j++) {
-                  grid[r - j][c] = '#';
+                  grid[r - j][c] = '#'
             };
             for (u = 0; u <= l; u++) {
-                  grid[r + u][c] = '#';
+                  grid[r + u][c] = '#'
             };
 
 
@@ -180,12 +185,3 @@
       console.log(grid);
 
 })();
-
-/*
-1) Добавить условие так, что - бы не заходить на битон. "(+)"
-2) Создать переменную счёт и когда попаданет на вишню += 5очк. "(+)"
-3) создать див в котором отображается счёт. "(+)"
-4) за цкаждое движение - 1 очк. "(+)"
-5) Проверить очки на 0 если 0 игра окончена. "(+)"
-6) дать фору в 20 очков. "(+)"
-*/
