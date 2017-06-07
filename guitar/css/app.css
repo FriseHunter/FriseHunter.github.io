@@ -1,50 +1,61 @@
-body{
+body {
       background-image: url(../img/bgbody/guitar-wood-background.jpg);
 }
-.orbit-caption{
+
+.orbit-caption {
       color: darkgreen;
       font-size: 2em;
-      background-color:rgba(255,126,5, 0.1);
+      background-color: rgba(255, 126, 5, 0.1);
 }
-#brands{
+
+#brands {
       background-color: white;
 }
-#brands img:hover{
+
+#brands img:hover {
       background-color: white;
       box-shadow: 0 25px 55px 0.25px #31363F;
       transform: translateY(-15px);
       transform: scale(1.1);
 }
-#anm:hover{
+
+#anm:hover {
       background-color: white;
-      box-shadow: 0 25px 1000px 200px rgba(255,69,0,0.75);
+      box-shadow: 0 25px 1000px 200px rgba(255, 69, 0, 0.75);
       transform: translateY(-15px);
       transform: scale(1.2);
 }
-#cont{
+
+#cont {
       background-color: white;
 }
-#cont img{
-      height:200px;
+
+#cont img {
+      height: 200px;
 }
-#cont img:hover{
+
+#cont img:hover {
       background-color: white;
       box-shadow: 0 25px 55px 0.25px #31363F;
       transform: translateY(-15px);
       transform: scale(1.2);
 }
-.mybgc{
-      background-color: rgba(209,112,2,0.75);
-      color:red;
+
+.mybgc {
+      background-color: rgba(209, 112, 2, 0.75);
+      color: red;
       font-weight: bold;
       font-size: 3em;
 }
-.mylink{
-      color:grey;
+
+.mylink {
+      color: #777;
 }
-.mylink:hover{
-      color:orange;
+
+.mylink:hover {
+      color: orange;
 }
-.mylink:active{
+
+.mylink:active {
       color: green;
 }
