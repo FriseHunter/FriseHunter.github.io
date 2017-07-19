@@ -1,0 +1,16 @@
+body{
+     margin: 0;
+     padding: 0;
+     background: #cce5ff;
+}
+h1 {
+     text-shadow: 0 -1px 1px gold;
+     color:#004d00;
+}
+.input{
+     border-radius: 5px;
+     box-shadow: -2px 2px 5px 1px gold;
+     text-shadow: 0 -1px 1px gold;
+}
+
+ 

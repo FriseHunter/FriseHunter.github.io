@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+     <div class="row">
+          <h1 class="col-md-6 col-md-offset-3">Task Form</h1>
+          <br>
+          <!-- Registration -->
+
+          <div class="input-group input-group-lg col-md-6 col-md-offset-3 input">
+               <span class="input-group-addon glyphicon glyphicon-asterisk"></span>
+               <input type="text" class="form-control" placeholder="Title">
+          </div>
+          <br>
+          
+          <div class="input-group input-group-lg col-md-6 col-md-offset-3 input">
+               <span class="input-group-addon glyphicon glyphicon-pencil"></span>
+               <textarea name="name" style="height:8em;" rows="8" cols="20" class="form-control" placeholder="Description"></textarea>
+          </div><br>
+
+          <div class="input-group input-group-lg col-md-6 col-md-offset-3 input">
+               <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+               <input type="date" name="calendar" class="form-control">
+          </div><br>
+
+          <div class="<checkbox></checkbox> input-group input-group-lg col-md-6 col-md-offset-3 input">
+               <span class="input-group-addon glyphicon glyphicon-ok"></span>
+               <select class="form-control">
+                    <option value="" disabled selected hidden>Please Choose Status...</option>
+                 <option>In process</option>
+                 <option>Done</option>
+               </select>
+          </div><br>
+          <div>
+               <button type="button" class="btn btn-warning btn-lg col-md-2 col-md-offset-5" name="button">Submit</button>
+
+          </div>
+     </div>
+      {% endblock %}
