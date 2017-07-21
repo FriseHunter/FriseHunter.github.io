@@ -1,42 +1,47 @@
 {% extends 'layout.html' %} {% block content %}
-<form class="" action="/user/create" method="post">
+<div class="row col-md-6 col-md-offset-3">
+     <form class="" action="/user/create" method="post">
 
+          <br>
+          <div class="row">
+               <h1 align="center" class="col-md-6 col-md-offset-3">Registration</h1>
+               <br>
+               <!-- Registration -->
 
-  <div class="row">
-    <h1 class="col-md-6 col-md-offset-3">Registration</h1>
-    <br>
-    <!-- Registration -->
+               <div class="input-group input-group-md col-md-4 col-md-offset-4 input">
+                    <span class="input-group-addon glyphicon glyphicon-user"></span>
+                    <input type="text" class="form-control" placeholder="Fullname" name="fullname">
+               </div>
 
-    <div class="input-group input-group-lg col-md-4 col-md-offset-4 input">
-      <span class="input-group-addon glyphicon glyphicon-user"></span>
-      <input type="text" class="form-control" placeholder="Fullname" name="fullname">
+               <br>
+               <div class="input-group input-group-md col-md-4 col-md-offset-4 input">
+                    <span class="input-group-addon glyphicon glyphicon-envelope"></span>
+                    <input type="text" class="form-control" placeholder="E - mail" name="email">
+               </div>
+               <br>
 
-    </div>
-    <br>
-    <div class="input-group input-group-lg col-md-4 col-md-offset-4 input">
-      <span class="input-group-addon glyphicon glyphicon-envelope"></span>
-      <input type="text" class="form-control" placeholder="E - mail" name="email">
-    </div>
-    <br>
+               <div class="input-group input-group-md col-md-4 col-md-offset-4 input">
+                    <span class="input-group-addon"> <i class="fa fa-key" aria-hidden="true"> </i></span>
+                    <input type="text" class="form-control" placeholder="Password" name="password">
+               </div>
+               <br>
+               <div>
 
-    <div class="input-group input-group-lg col-md-4 col-md-offset-4 input">
-      <span class="input-group-addon"> <i class="fa fa-key" aria-hidden="true"> </i></span>
-      <input type="text" class="form-control" placeholder="Password" name="password">
-    </div><br>
-    <div>
+                    <div class="input-group input-group-md col-md-4 col-md-offset-4 input">
+                         <span class="input-group-addon"> <i class="fa fa-key" aria-hidden="true"> </i></span>
+                         <input type="text" class="form-control" placeholder="Confirm Password" name="cpassword">
+                    </div>
+                    <br>
+                    <div>
+                         <button type="submit" class="btn btn-warning btn-md col-md-2 col-md-offset-5" name="button">Submit</button>
 
-      <div class="input-group input-group-lg col-md-4 col-md-offset-4 input">
-        <span class="input-group-addon"> <i class="fa fa-key" aria-hidden="true"> </i></span>
-        <input type="text" class="form-control" placeholder="Confirm Password" name="cpassword">
-      </div><br>
-      <div>
-        <button type="submit" class="btn btn-warning btn-lg col-md-2 col-md-offset-5" name="button">Submit</button>
+                    </div><br>
+                    <div></div>
+                    <br> {%if error%}
+                    <div class="alert alert-danger input-group input-group-md col-md-2 col-md-offset-5" role="alert">{{ error }}</div>
+                    {%endif%}
+               </div>
 
-      </div><br>
-
-    </div>
-    {%if error%}
-    <div class="alert alert-danger" role="alert">{{ error }}</div>
-    {%endif%}
-</form>
-{% endblock %}
+     </form>
+     </div>
+     {% endblock %}
