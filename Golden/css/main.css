@@ -1,0 +1,278 @@
+body {
+      font-family: Areal, sans-serif;
+      padding: 0;
+      margin: 0;
+}
+
+.clearfix:after {
+      content: '';
+      display: table;
+      width: 100%;
+      clear: both;
+}
+
+div {
+      box-sizing: border-box;
+}
+
+header {
+      background: url(../img/first_bg.jpg) no-repeat center top / cover;
+      /*padding-bottom: 160px;*/
+      height: 100vh;
+}
+
+.container {
+      width: 930px;
+      margin: 0 auto;
+}
+
+.logo {
+      float: left;
+      margin-top: 41px;
+}
+
+nav {
+      float: right;
+}
+
+
+/*//////////////////////////////////menu/////////////////////////////////////*/
+
+.menu {
+      padding: 0;
+      margin: 0;
+      display: block;
+}
+
+.menu li {
+      float: left;
+      display: block;
+      margin-right: 41px;
+      margin-top: 50px;
+}
+
+.menu a {
+      color: #FFF;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+
+.menu a:hover {
+      color: #FED136;
+}
+
+.menu a:active {
+      color: #D82727;
+}
+
+.titles__first {
+      font-size: 40px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 180px;
+}
+
+h1 {
+      font-size: 75px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 15px;
+}
+
+.button {
+      background: #fed136;
+      color: #484543;
+      border-radius: 3px;
+      display: block;
+      width: 240px;
+      padding: 20px 0;
+      margin: 0 auto;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      margin-top: 50px;
+}
+
+.button:hover {
+      background-color: #faad09;
+      color: #FFF;
+}
+
+.button:active {
+      background-color: #fc6b0a;
+      color: gold;
+}
+
+.title {
+      padding-top: 115px;
+}
+
+.title h2 {
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+}
+
+.title p {
+      color: #777777;
+      text-align: center;
+      font-size: 16px;
+      margin-top: 5px.
+}
+
+
+/*/////////////////////////////////service//////////////////////////////////*/
+
+.services {
+      margin-top: 50px;
+}
+
+.services__item {
+      width: 270px;
+      float: left;
+      text-align: center;
+}
+
+.services__item h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+}
+
+.services__item p {
+      color: #777777;
+      font-size: 14px;
+      line-height: 1.55em;
+}
+
+.services__item:last-child {
+      float: right;
+}
+
+.services__item:nth-child(2) {
+      margin-left: 62px;
+}
+
+#services {
+      padding-bottom: 205px;
+}
+
+
+/*//////////////////////////////////portfolio////////////////////////////////*/
+
+#portfolio {
+      background: #f7f7f7;
+      padding-bottom: 90px;
+}
+
+.works {
+      margin-top: 70px;
+}
+
+.works img:last-child {
+      float: right;
+}
+
+.works img:nth-child(2) {
+      margin-left: 27px;
+}
+
+
+/*///////////////////////////////////About__us////////////////////////////////*/
+
+
+/*//////////////////////////////////align__left//////////////////////////////*/
+
+.about__left {
+      margin-top: 80px;
+}
+
+.text__left {
+      margin-left: 60px;
+      width: 280px;
+      float: left;
+      text-align: right;
+}
+
+.text__left h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+}
+
+.text__left span {
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-transform: capitalize;
+}
+
+.text__left p {
+      color: #777777;
+      font-size: 14px;
+      line-height: 1.55em;
+}
+
+.image__right img {
+      margin-left: 33px;
+      margin-top: 10px;
+}
+
+
+/*////////////////////////////////align__right//////////////////////////////*/
+
+.about__right {
+      width: 100%;
+      margin-top: 80px;
+}
+
+.image__left img {
+      float: right;
+      margin-right: 33px;
+      margin-top: 10px;
+}
+
+.text__right {
+      margin-right: 60px;
+      width: 280px;
+      float: right;
+      text-align: left;
+}
+
+.text__right h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+}
+
+.text__right span {
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-transform: capitalize;
+}
+
+.text__right p {
+      color: #777777;
+      font-size: 14px;
+      line-height: 1.55em;
+}
+
+
+/*/////////////////////////////////footer/////////////////////////////////////*/
+
+footer {
+      margin-bottom: -15px;
+      padding: 0;
+      background-color: #F7F7F7;
+}
+
+#info p {
+      color: #777777;
+      font-size: 14px;
+      text-align: center;
+      padding: 110px;
+}
