@@ -207,6 +207,7 @@ header {
 
 .faces__item img:hover {
       opacity: 0.35;
+      cursor: pointer;
 }
 
 .faces {
