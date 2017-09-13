@@ -216,6 +216,13 @@ header {
 
 .networks__icon {
       margin: 28px 10px 0 0;
+      transition: all 0.5s linear;
+      border-radius: 50%;
+}
+
+.networks__icon:hover {
+      transform: scale(1.5);
+      box-shadow: 0 0 5px 0.25px rgba(0, 0, 0, 0.5);
 }
 
 .networks__icon:last-child {
