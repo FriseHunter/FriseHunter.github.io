@@ -111,6 +111,11 @@ header {
       background: #2ecc71 url('../img/cog.png') no-repeat center center;
 }
 
+.trigger__icon:hover {
+      transform: rotate(360deg);
+      transition: all 2s linear;
+}
+
 .trigger__icon_flat {
       background: #2ecc71 url('../img/star.png') no-repeat center center;
 }
