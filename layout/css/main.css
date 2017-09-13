@@ -107,13 +107,13 @@ header {
       margin: 0 auto 25px auto;
 }
 
-.trigger__icon_theme {
-      background: #2ecc71 url('../img/cog.png') no-repeat center center;
-}
-
 .trigger__icon:hover {
       transform: rotate(360deg);
       transition: all 2s linear;
+}
+
+.trigger__icon_theme {
+      background: #2ecc71 url('../img/cog.png') no-repeat center center;
 }
 
 .trigger__icon_flat {
@@ -135,13 +135,9 @@ header {
       background: #e3e3e3;
 }
 
-.subscribe__title {}
-
 .subscribe__text {
       margin: 34px 0;
 }
-
-.subscribe__form {}
 
 .subscribe__input {
       background: #fff;
@@ -206,13 +202,16 @@ header {
 
 .faces__item img {
       display: block;
+      transition: opacity 0.4s linear;
+}
+
+.faces__item img:hover {
+      opacity: 0.35;
 }
 
 .faces {
       margin: 27px 0 52px;
 }
-
-.networks {}
 
 .networks__icon {
       margin: 28px 10px 0 0;
