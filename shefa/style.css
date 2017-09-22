@@ -159,6 +159,7 @@ body {
       background-color: #fff;
       padding: 60px 30px 60px 30px;
       border: 1px solid #EEEEEE;
+      transition:0.5, ease;
 }
 
 #cont div:hover {
