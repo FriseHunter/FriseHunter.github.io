@@ -159,7 +159,7 @@ body {
       background-color: #fff;
       padding: 60px 30px 60px 30px;
       border: 1px solid #EEEEEE;
-      transition:0.5s, linear;
+      transition:all 0.5s linear 0s;
 }
 
 #cont div:hover {
