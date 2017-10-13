@@ -3,6 +3,10 @@
       padding: 0;
 }
 
+#multi {
+      margin-top: 40px;
+}
+
 .style__divs {
       position: relative;
       left: 50%;
@@ -42,6 +46,7 @@ input:focus {
 }
 
 .imputs {
+      border-top: 1px solid #ddd;
       position: relative;
       height: 200px;
 }
@@ -86,4 +91,5 @@ input:focus {
       font-weight: bold;
       padding: 40px 0;
       background: lightgoldenrodyellow;
+      border-bottom: 1px solid #ddd;
 }
