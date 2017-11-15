@@ -38,10 +38,7 @@ body{
 /************************первый экран***********************/
 
 .romb{
-	position: absolute;
-	bottom: -140px; 
-	left:50%;
-	margin-left: -40px; 
+	margin:0 auto -45px auto;
 }
 .first{
 	background: url(../img/fon_1.jpg) no-repeat top center;
