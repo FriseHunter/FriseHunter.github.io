@@ -1,0 +1,153 @@
+
+
+/******************************delete**********************************/
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+	font-weight: 700;
+	padding:0;
+	margin:0;
+}
+h1{
+	font-size: 45px;
+	letter-spacing: 2px;
+}
+h2{
+	font-size: 35px;
+	color:#f16423;
+}
+h3{
+	font-size: 22px;
+	
+}
+h4{
+	font-size: 20px;
+
+}
+body{
+	background: grey;
+	text-align: center;
+}
+
+/************************первый экран***********************/
+
+.romb{
+	position: absolute;
+	bottom: -140px; 
+	left:50%;
+	margin-left: -40px; 
+}
+.first{
+	background: url(../img/fon_1.jpg) no-repeat top center;
+	color:#fff;
+	
+}
+.logo{
+	padding-top: 14px;
+}
+.offer{
+	padding:235px;
+}
+.offer h3{
+	padding: 13px 0 25px 0;
+	font-weight: 400;
+}
+.button{
+	background: #f16423;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;	
+	padding: 18px 64px 18px 64px;
+	border:0;
+	border-radius: 5px;
+	outline:none;
+}
+.button:hover{
+	background: #f18923;
+}
+.button:active{
+	background: #f14f23
+
+}
+/******************конец первого экрана***********************/
+
+/************************второй экран*************************/
+
+.second{
+	background: url(../img/fon_2.jpg) no-repeat top center;
+
+}
+.container{
+	margin: 0 auto;
+	width: 1170px;
+}
+.caption{
+	padding: 100px 0 50px 0;
+}
+.caption h3{
+	margin-top: 20px;
+}
+.quality{
+	width: 270px;
+	font-size: 15px;
+
+}
+.quality h4{
+	margin:24px 0 20px 0;
+	
+}
+.qualitys{
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+/********************конец второго экран*************************/
+
+/************************третий экран*************************/
+
+.third{
+	background: url(../img/fon_3.jpg) no-repeat top center;
+}
+.third h2{
+color: #fff;
+}
+.input{
+	margin:0 auto 16px auto;
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	width: 418px;
+	padding: 22px;
+	border:0;
+	border-radius: 5px;
+	outline:none;
+}
+.input:focus{
+	box-shadow: 0 0 25px 1px #f16423; 
+}
+.form .button{
+	width: 418px;
+	/*padding: 22px 0 13px 0;*/
+
+}
+.form{
+	padding-bottom: 100px;
+}
+/********************конец третего экран*************************/
+
+/****************************футер*******************************/
+
+.credits{
+	background: #060606;
+	font-size: 12px;
+	color: #a2a1a1;
+	padding: 100px 0;
+}
