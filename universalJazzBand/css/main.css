@@ -30,18 +30,26 @@ h4{
 	font-size: 20px;
 
 }
+p{
+	font-size: 15px;
+	line-height: 22px;
+}
 a{
 	text-decoration: none;
 }
 body{
-	background: grey;
+	background: #060606;
 	text-align: center;
+	margin:0 auto;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 }
 
 /************************первый экран***********************/
 
 .romb{
-	margin:0 auto -45px auto;
+	margin:0 auto -60px auto;
 }
 .first{
 	background: url(../img/fon_1.jpg) no-repeat top center;
@@ -95,11 +103,10 @@ body{
 }
 .quality{
 	width: 270px;
-	font-size: 15px;
 
 }
 .quality h4{
-	margin:24px 0 20px 0;
+	margin:10px 0 10px 0;
 	
 }
 .qualitys{
@@ -135,7 +142,7 @@ color: #fff;
 }
 .form .button{
 	width: 418px;
-	/*padding: 22px 0 13px 0;*/
+	padding: 22px 0 13px 0;
 
 }
 .form{
