@@ -94,18 +94,18 @@ body {
 
 a, a:visited {
       /* порядок правил для ссылок имеет значение */
-      color: #e6618c;
-      text-decoration: underline;
+      color: #000;
+      text-decoration: none;
 }
 
 a:hover {
-      color: #fdf208;
+      color: #76b700;
       text-decoration: none;
 }
 
 a:focus, a:active {
-      color: #c83867;
-      text-decoration: underline;
+      color: #76b700;
+      text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -157,6 +157,10 @@ h4 {
 /* ----------  Шрифты и Заголовки конец ------- */
 
 /* ---------------------My Classes------------- */
+
+.container {
+      padding: 0;
+}
 
 .buttonLinear {
       font-family: 'Roboto Slab', serif;
@@ -303,7 +307,7 @@ li a {
 }
 
 .display_1 img {
-      padding: 470px 0 272px 20px;
+      padding: 470px 0 272px 37px;
 }
 
 .card_items {
@@ -366,13 +370,6 @@ li a {
 
 .display_2 img {
       padding: 0;
-      /* float: left; */
-      /* display: block; */
-}
-
-.display_2 img:hover {
-      opacity: 0.78;
-      transition: 0.3s all linear;
 }
 
 .bg .img_1 {
@@ -417,18 +414,20 @@ li a {
 
 .marf {
       text-align: center;
-      padding-bottom: 100px;
+      padding: 0 0 100px 0;
 }
 
 .marfItem {
-      padding: 25px;
+      width: 270px;
+      padding-bottom: 25px;
       border-radius: 5px;
 }
 
 .marfItem:hover {
-      padding: 24px;
+      padding-bottom: 24px;
+      margin-top: -1px;
       border: 1px solid #76b700;
-      /* transition: 0.3s; */
+      transition: all 0.5s linear;
 }
 
 .marfItem:nth-child(1) img {
@@ -450,7 +449,7 @@ li a {
 .marfItem h4 {
       font-family: 'Roboto Slab', serif;
       margin: 22px 0 26px 0;
-      text-transform: inherit;
+      text-transform: none;
       font-size: 20px;
       letter-spacing: 2px;
 }
@@ -482,3 +481,128 @@ li a {
 }
 
 /* ------------------ endSection_3 -------------- */
+
+/* --------------------- Section_4 -------------- */
+
+.display_4 {
+      background: #f2f1ee;
+      text-align: center;
+      padding: 100px 0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+}
+
+.display_4 h2 {
+      padding-bottom: 50px;
+      color: #ff4933;
+}
+
+.billbord_module {
+      margin-top: 20px;
+      height: 440px;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 5px 10px 1px #ddd;
+}
+
+.billbord h4 {
+      margin-bottom: 15px;
+      font-family: 'Roboto Slab', serif;
+      text-transform: none;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #000;
+}
+
+.billbord a {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #76b700;
+      font-weight: 700;
+      letter-spacing: 1px;
+}
+
+.billbord a:hover {
+      color: #ff4933;
+      transition: 0.3s;
+}
+
+.billbord p {
+      margin-top: 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+}
+
+.billbord button {
+      padding: 9px 51px;
+}
+
+.bill_img_1 {
+      margin-top: 60px;
+}
+
+.bill_img_2 {
+      margin-top: 42px;
+}
+
+.bill_img_3 {
+      margin-top: 50px;
+}
+
+.bill_img_4 {
+      margin-top: 40px;
+}
+
+.bill_img_5 {
+      margin-top: 8px;
+}
+
+.bill_img_6 {
+      margin: 51px 0;
+}
+
+.bill_img_7 {
+      margin-top: 20px;
+}
+
+/* ------------------ endSection_4 -------------- */
+
+/* --------------------- Section_5 -------------- */
+
+.display_5 h2 {
+      color: #ff4933;
+      padding: 100px 0 50px 0
+}
+
+.display_5 h4 {
+      color: #000;
+      line-height: 32px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: none;
+}
+
+.cash_1, .cash_2, .cash_3, .cash_4 {}
+
+.display_5 img {
+      text-align: center;
+      padding-bottom: 126px;
+}
+
+.display_5 p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+}
+
+.plan img {
+      margin-top: -26px;
+      padding-bottom: 100px;
+}
+
+/* ------------------ endSection_5 -------------- */
