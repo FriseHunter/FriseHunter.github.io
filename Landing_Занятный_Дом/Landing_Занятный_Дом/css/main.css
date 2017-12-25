@@ -1,0 +1,709 @@
+/* --------------- reset.css --------------- */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      /* обнуляем отступы и убираем бордюры */
+      vertical-align: baseline;
+      /* приводим все к одной базовой линии */
+      background: transparent;
+      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+      font-size: 100%;
+      /* размер шрифта всем одинаковый */
+}
+
+a {
+      /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+      outline: none;
+}
+
+table {
+      /* устраняем отступы между ячейками таблицы */
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+td, td img {
+      vertical-align: top;
+      /* возвращаем привычное вертикальное выравнивание */
+}
+
+input, select, button, textarea {
+      margin: 0;
+      /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+      font-size: 100%;
+      /* делаем размер шрифтов везде одинаковым */
+      outline: none;
+}
+
+input[type="text"], input[type="password"], textarea {
+      padding: 0;
+      /* убираем внутренние отступы для текстовых полей */
+}
+
+input[type="checkbox"] {
+      /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+      vertical-align: bottom;
+}
+
+input[type="radio"] {
+      vertical-align: text-bottom;
+}
+
+sub {
+      vertical-align: sub;
+      font-size: smaller;
+}
+
+sup {
+      vertical-align: super;
+      font-size: smaller;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+}
+
+nav ul {
+      list-style: none;
+}
+
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+
+html {
+      min-height: 100%;
+      /* всегда показываем вертикальную полосу прокрутки  */
+}
+
+body {
+      color: #000;
+      text-align: left;
+      font-size: 1em;
+      /* используем безопасные шрифтовые CSS стеки */
+      min-height: 100%;
+}
+
+a, a:visited {
+      /* порядок правил для ссылок имеет значение */
+      color: #000;
+      text-decoration: none;
+}
+
+a:hover {
+      color: #76b700;
+      text-decoration: none;
+}
+
+a:focus, a:active {
+      color: #76b700;
+      text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+}
+
+img {
+      max-width: 100%;
+}
+
+.clr {
+      clear: both;
+}
+
+.clearfix:after {
+      clear: both;
+      content: "";
+      display: table;
+}
+
+/* --------------- /базовые настройки ---------*/
+
+/* --------------- Шрифты и Заголовки ---------*/
+
+h2 {
+      font-size: 30px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 40px;
+      letter-spacing: 2px;
+}
+
+h3 {
+      font-size: 18px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+}
+
+h4 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+}
+
+/* ----------  Шрифты и Заголовки конец ------- */
+
+/* ---------------------My Classes------------- */
+
+.container {
+      padding: 0;
+}
+
+.buttonLinear {
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: lowercase;
+      width: 214px;
+      height: 38px;
+      border: 1px solid #76b700;
+      background: none;
+      color: #76b700;
+      border-radius: 5px;
+      margin: -8px 15px 15px 15px;
+}
+
+.buttonLinear:hover {
+      border: 0;
+      background: #80bb22;
+      color: #fff;
+      transition: 0.3s all linear;
+}
+
+.buttons {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      background: #80bb22;
+      text-transform: uppercase;
+      border: 0;
+      border-radius: 5px;
+      margin-top: 10px;
+}
+
+.buttons:hover {
+      color: #80bb22;
+      background: none;
+      border: 1px solid #80bb22;
+      transition: 0.3s all linear;
+}
+
+.inputs {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      padding: 20px 0 20px 20px !important;
+      border: 0;
+      border-radius: 5px;
+      height: 45px;
+      width: 238px;
+      margin-top: 10px;
+}
+
+.inputs:focus {
+      box-shadow: 0 0 10px 1.5px #80bb22;
+      transition: 0.5s;
+}
+
+/* ---------------------end My Classes------------- */
+
+/* ---------------------- Header -------------- */
+
+header {
+      background: #f2f1ee;
+      padding: 30px 0;
+      margin: 0;
+}
+
+.slog {
+      padding-top: 20px;
+      text-transform: uppercase;
+      color: #fd6554;
+}
+
+.menu {
+      margin-top: -5px;
+}
+
+.naw li:nth-child(1) a {
+      padding-left: 10px;
+}
+
+.naw li:nth-child(2) a {
+      padding-right: 5px;
+}
+
+.naw li:nth-child(3) a {
+      padding-left: 15px;
+}
+
+.naw li:nth-child(4) a {
+      padding-left: 35px;
+}
+
+.naw li:nth-child(5) a {
+      padding-left: 40px;
+}
+
+.naw li a:hover {
+      color: #80bb22;
+      transition: 0.3s;
+}
+
+a {
+      text-decoration: none;
+      color: #010101;
+}
+
+li {
+      text-align: center;
+      display: block;
+}
+
+li a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0;
+}
+
+.phones {
+      text-align: right;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 400;
+      font-size: 18px;
+}
+
+.phones span:nth-child(2) {
+      padding-right: 20px;
+}
+
+.phones span:first-child i {
+      padding-left: 10px;
+      font-size: 24px;
+      vertical-align: bottom;
+}
+
+/* ---------------------- endHeader ------------- */
+
+/* ----------------------Section_1--------------- */
+
+.display_1 {
+      background: url('../img/Fon_Present.jpg') no-repeat top center;
+}
+
+.card_items {
+      margin: 295px 0 298px 70px;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      width: 298px;
+      height: 384px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+}
+
+.inputs {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      padding: 20px 0 20px 20px !important;
+      border: 0;
+      border-radius: 5px;
+      height: 45px;
+      width: 238px;
+      margin-top: 10px;
+}
+
+.card_items button {
+      padding: 12px 88px;
+}
+
+.card_items button:hover {
+      padding: 11px 87px;
+}
+
+.card_items h4 {
+      padding: 35px 0 20px 0;
+      letter-spacing: 0.1em;
+}
+
+.card_items p {
+      margin-top: 20px;
+      line-height: 1.2;
+      font-weight: 300;
+      font-size: 13px;
+      color: #fff;
+      opacity: 0.5;
+}
+
+/* ----------------------Section_1--------------- */
+
+/* ----------------------Section_2--------------- */
+
+.bg {
+      background: #80bb22;
+      border-radius: 5px;
+}
+
+.display_2 h2 {
+      color: #ff4933;
+      padding: 100px 0 48px;
+}
+
+.display_2 img {
+      padding: 0;
+}
+
+.bg .img_1 {
+      border-radius: 5px 0 0 0;
+      /* border: 2px solid green; */
+}
+
+.bg .img_3 {
+      border-radius: 0 5px 0 0;
+      /* border: 2px solid green; */
+}
+
+.bg .img_7 {
+      border-radius: 0 0 0 5px;
+}
+
+.bg .img_9 {
+      border-radius: 0 0 5px 0;
+}
+
+.display_2 .container {
+      margin-bottom: 100px;
+}
+
+/* ------------------ endSection_2 -------------- */
+
+/* --------------------- Section_3 -------------- */
+
+.display_3 {
+      background: url('../img/thred.jpg') no-repeat top center / cover;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+}
+
+.display_3 h2 {
+      padding: 100px 0 50px 0;
+      color: #fff;
+}
+
+.marf {
+      text-align: center;
+      padding: 0 0 100px 0;
+}
+
+.marfItem {
+      width: 270px;
+      padding-bottom: 25px;
+      border-radius: 5px;
+}
+
+.marfItem:hover {
+      padding-bottom: 24px;
+      margin-top: -1px;
+      border: 1px solid #76b700;
+      transition: all 0.5s linear;
+}
+
+.marfItem:nth-child(1) img {
+      padding-top: 18px;
+}
+
+.marfItem:nth-child(2) img {
+      padding-top: 25px;
+}
+
+.marfItem:nth-child(3) img {
+      margin-top: 21px;
+}
+
+.marfItem:nth-child(4) img {
+      margin-top: 26px;
+}
+
+.marfItem h4 {
+      font-family: 'Roboto Slab', serif;
+      margin: 22px 0 26px 0;
+      text-transform: none;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+.marfItem a {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #76b700;
+      font-weight: 700;
+      letter-spacing: 1px;
+}
+
+.marfItem a:hover {
+      color: #fff;
+      transition: 0.3s;
+}
+
+.marfItem p {
+      margin-top: 20px;
+}
+
+.marfItem button {
+      padding: 10px 52px;
+      margin-top: 20px;
+}
+
+.marfItem button:hover {
+      padding: 9px 51px;
+}
+
+/* ------------------ endSection_3 -------------- */
+
+/* --------------------- Section_4 -------------- */
+
+.display_4 {
+      background: #f2f1ee;
+      text-align: center;
+      padding: 100px 0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+}
+
+.display_4 h2 {
+      padding-bottom: 50px;
+      color: #ff4933;
+}
+
+.billbord_module {
+      margin-top: 20px;
+      height: 440px;
+      width: 270px;
+      background: #fff;
+      box-shadow: 0 5px 10px 1px #ddd;
+}
+
+.billbord h4 {
+      margin-bottom: 15px;
+      font-family: 'Roboto Slab', serif;
+      text-transform: none;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #000;
+}
+
+.billbord a {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #76b700;
+      font-weight: 700;
+      letter-spacing: 1px;
+}
+
+.billbord a:hover {
+      color: #ff4933;
+      transition: 0.3s;
+}
+
+.billbord p {
+      margin-top: 10px;
+      font-size: 18px;
+      text-transform: uppercase;
+}
+
+.billbord button {
+      padding: 9px 51px;
+}
+
+.bill_img_1 {
+      margin-top: 60px;
+}
+
+.bill_img_2 {
+      margin-top: 42px;
+}
+
+.bill_img_3 {
+      margin-top: 50px;
+}
+
+.bill_img_4 {
+      margin-top: 40px;
+}
+
+.bill_img_5 {
+      margin-top: 8px;
+}
+
+.bill_img_6 {
+      margin: 51px 0;
+}
+
+.bill_img_7 {
+      margin-top: 20px;
+}
+
+/* ------------------ endSection_4 -------------- */
+
+/* --------------------- Section_5 -------------- */
+
+.display_5 h2 {
+      color: #ff4933;
+      padding: 100px 0 50px 0
+}
+
+.display_5 h4 {
+      color: #000;
+      line-height: 32px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: none;
+}
+
+.cash_1, .cash_2, .cash_3, .cash_4 {}
+
+.display_5 img {
+      text-align: center;
+      padding-bottom: 126px;
+}
+
+.display_5 p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+}
+
+.plan img {
+      margin-top: -26px;
+      padding-bottom: 100px;
+}
+
+/* ------------------ endSection_5 -------------- */
+
+/* --------------------- Section_6 -------------- */
+
+.display_6 {
+      background: url('../img/sixth.jpg') no-repeat top center/cover;
+}
+
+.display_6 h2 {
+      color: #fff;
+}
+
+.display_6 {
+      padding: 100px 0 50px 0;
+}
+
+.pd-50 {
+      margin: 50px 0 100px 0 !important;
+}
+
+.bullets {
+      width: 15px !important;
+      height: 15px !important;
+      border-radius: 50%;
+      background: none !important;
+      border: 1px solid black;
+      margin-right: 10px !important;
+}
+
+.active {
+      background: black !important;
+}
+
+.bullets_items {
+      margin-bottom: -60px;
+}
+
+/* ------------------ endSection_6 -------------- */
+
+/* --------------------- Section_7 -------------- */
+
+.display_7 {
+      background: url('../img/likes.jpg') no-repeat top center/cover;
+}
+
+.display_7 img {
+      border-radius: 5px;
+}
+
+.display_7 p {
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+}
+
+.display_7 h4 {
+      margin-bottom: 70px;
+      font-weight: 700;
+      text-transform: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+}
+
+.display_7 h2 {
+      padding: 100px 0 50px 0;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 2px;
+}
+
+.sizeImg {
+      margin: 0 auto 30px auto;
+      border-radius: 5px;
+      height: 300px;
+      width: 300px;
+}
+
+.bullets_green {
+      width: 15px !important;
+      height: 15px !important;
+      border-radius: 50%;
+      background: none !important;
+      border: 1px solid #95c933;
+      margin-right: 10px !important;
+}
+
+#carousel_2 ol:first-child .active {
+      background: #95c933 !important;
+}
+
+.display_7 {
+      padding-bottom: 150px;
+}
+
+.border {
+      background: none !important;
+      height: 702px !important;
+      border: 1px solid #fff !important;
+      border-radius: 5px !important;
+}
+
+.img-block {
+      margin-top: 50px;
+}
+
+/* ------------------ endSection_7 -------------- */
