@@ -303,15 +303,11 @@ li a {
 /* ----------------------Section_1--------------- */
 
 .display_1 {
-      background: url('../img/first_display.jpg') no-repeat top center;
-}
-
-.display_1 img {
-      padding: 470px 0 272px 37px;
+      background: url('../img/Fon_Present.jpg') no-repeat top center;
 }
 
 .card_items {
-      margin: 295px 0 0 70px;
+      margin: 295px 0 298px 70px;
       font-family: 'Roboto', sans-serif;
       text-align: center;
       width: 298px;
@@ -606,3 +602,108 @@ li a {
 }
 
 /* ------------------ endSection_5 -------------- */
+
+/* --------------------- Section_6 -------------- */
+
+.display_6 {
+      background: url('../img/sixth.jpg') no-repeat top center/cover;
+}
+
+.display_6 h2 {
+      color: #fff;
+}
+
+.display_6 {
+      padding: 100px 0 50px 0;
+}
+
+.pd-50 {
+      margin: 50px 0 100px 0 !important;
+}
+
+.bullets {
+      width: 15px !important;
+      height: 15px !important;
+      border-radius: 50%;
+      background: none !important;
+      border: 1px solid black;
+      margin-right: 10px !important;
+}
+
+.active {
+      background: black !important;
+}
+
+.bullets_items {
+      margin-bottom: -60px;
+}
+
+/* ------------------ endSection_6 -------------- */
+
+/* --------------------- Section_7 -------------- */
+
+.display_7 {
+      background: url('../img/likes.jpg') no-repeat top center/cover;
+}
+
+.display_7 img {
+      border-radius: 5px;
+}
+
+.display_7 p {
+      color: #fff;
+      font-weight: 500;
+      font-size: 16px;
+}
+
+.display_7 h4 {
+      margin-bottom: 70px;
+      font-weight: 700;
+      text-transform: none;
+      font-size: 16px;
+      letter-spacing: 1px;
+}
+
+.display_7 h2 {
+      padding: 100px 0 50px 0;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 2px;
+}
+
+.sizeImg {
+      margin: 0 auto 30px auto;
+      border-radius: 5px;
+      height: 300px;
+      width: 300px;
+}
+
+.bullets_green {
+      width: 15px !important;
+      height: 15px !important;
+      border-radius: 50%;
+      background: none !important;
+      border: 1px solid #95c933;
+      margin-right: 10px !important;
+}
+
+#carousel_2 ol:first-child .active {
+      background: #95c933 !important;
+}
+
+.display_7 {
+      padding-bottom: 150px;
+}
+
+.border {
+      background: none !important;
+      height: 702px !important;
+      border: 1px solid #fff !important;
+      border-radius: 5px !important;
+}
+
+.img-block {
+      margin-top: 50px;
+}
+
+/* ------------------ endSection_7 -------------- */
