@@ -30,7 +30,7 @@
       <header>
             <div class="container">
                   <div class="row">
-                        <div class="logo col-lg-2">
+                        <div class="logo col-lg-2" id="logo">
                               <img src="img/logo.png" alt="logo">
                         </div>
                         <div class="headText col-lg-10 ">
@@ -44,23 +44,39 @@
                         </div>
                   </div>
             </div>
-            <div class="container menu">
-                  <ul class="row naw">
-                        <li class="col-lg-2"><a href="#">Занятный дом</a></li>
-                        <li class="col-lg-2"><a href="#">Оплата и доставка</a></li>
-                        <li class="col-lg-1"><a href="#">Отзывы</a></li>
-                        <li class="col-lg-1"><a href="#">Видео</a></li>
-                        <li class="col-lg-1"><a href="#">Контакты</a></li>
-                        <li class="col-lg-5 phones">
-                              <span> <i class="fa fa-phone" aria-hidden="true"></i> </span>
 
-                              <span>+375 (33) 669-77-39 </span>
-                              <span> +375 (44) 779-77-39</span></li>
-
-                  </ul>
-            </div>
+            <nav id="fixmenu" class="navbar navbar-expand-lg navbar-light bg-light menu">
+                  <div class="container">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+                        <div class="collapse menu navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav naw row">
+                                    <li class="col-2 nav-item active">
+                                          <a class="nav-link" href="#display_1">Занятный дом </a>
+                                    </li>
+                                    <li class="col-2 nav-item">
+                                          <a class="nav-link" href="#display_5">Оплата и доставка</a>
+                                    </li>
+                                    <li class="col-1 nav-item">
+                                          <a class="nav-link" href="#display_6">Видео</a>
+                                    </li>
+                                    <li class="col-1 nav-item">
+                                          <a class="nav-link" href="#display_7">Отзывы</a>
+                                    </li>
+                                    <li class="col-1 nav-item">
+                                          <a class="nav-link" href="#display_9">Контакты</a>
+                                    </li>
+                                    <li class="col-5 phones nav-item">
+                                          <span> <i class="fa fa-phone" aria-hidden="true"></i> </span> <span>+375 (33) 669-77-39 </span>
+                                          <span> +375 (44) 779-77-39</span>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </nav>
       </header>
-      <section class="display_1">
+      <section id="display_1" class="display_1">
             <div class="container">
                   <div class="row">
                         <div class="col-lg-8">
@@ -79,7 +95,10 @@
                         </div>
                   </div>
             </div>
-
+            <div class="row">
+                  <div class="col-1 offset-11 mr-auto fixed-bottom bottomUp">
+                        <a href="#" id="up" class="up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a></div>
+            </div>
       </section>
       <section class="display_2">
             <div class="container ">
@@ -208,7 +227,7 @@
                   </div>
             </div>
       </section>
-      <section class="display_5">
+      <section id="display_5" class="display_5">
             <div class="container">
                   <h2>Оплата и доставка</h2>
                   <div class="row">
@@ -275,7 +294,7 @@
                   </div>
             </div>
       </section>
-      <section class="display_6">
+      <section id="display_6" class="display_6">
             <div class="container">
                   <h2>Занятное видео</h2>
                   <div class="row">
@@ -318,7 +337,7 @@
                   </div>
             </div>
       </section>
-      <section class="display_7">
+      <section id="display_7" class="display_7">
             <div class="container">
                   <h2>отзывы</h2>
                   <div id="carousel_2" class="carousel slide" data-ride="carousel">
@@ -417,8 +436,84 @@
             </div>
 
       </section>
-      <section class="display_8"></section>
-      <section class="display_9"></section>
+      <section class="display_8">
+            <div class="container">
+                  <h2>Занятный дом - отличный подарок от всей семьи!</h2>
+                  <p>Купите Занятный Дом вместе с родственниками или друзьями. Это будет прекрасный совместный подарок</p>
+                  <div class="row pd-50">
+                        <div class="col-8"><iframe class="" width="770" height="435" src="https://www.youtube.com/embed/nhr-3agxGro" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></div>
+                        <div class="col-4">
+                              <div class="card_items ml-auto">
+                                    <h4>Оставьте заявку<br>на покупку занятного дома</h4>
+                                    <form action="#">
+                                          <input type="text" class="inputs" name="name" placeholder="имя" required><br>
+                                          <input type="tel" class="inputs" name="phone" placeholder="номер телефона" required><br>
+                                          <input type="text" class="inputs" name="promo" placeholder="промокод (если есть)"><br>
+                                          <button class="buttons">Купить</button>
+                                    </form>
+                                    <p>* Ваши данные не будут переданы <br>третим лицам</p>
+                              </div>
+                        </div>
+                  </div>
+
+                  <h2>Наши партнеры</h2>
+                  <div class="row pd-60">
+                        <div class="col-3 ml-auto mr auto"><img src="img/partter_1.png" alt="Партнёр"></div>
+                        <div class="col-3 ml-auto mr auto"><img src="img/partter_2.png" alt="Партнёр"></div>
+                        <div class="col-3 ml-auto mr auto"><img src="img/partter_3.png" alt="Партнёр"></div>
+                        <div class="col-3 ml-auto mr auto"><img src="img/partter_4.png" alt="Партнёр"></div>
+                  </div>
+                  <div class="row pd-60">
+                        <div class="col-4 ml-auto mr auto"><img src="img/partter_5.png" alt="Партнёр"></div>
+                        <div class="col-4 ml-auto mr auto"><img src="img/partter_6.png" alt="Партнёр"></div>
+                        <div class="col-4 ml-auto mr auto"><img src="img/partter_7.png" alt="Партнёр"></div>
+                  </div>
+                  <button class="buttonLinear_2" type="button" name="button">стать партнером</button>
+            </div>
+      </section>
+      <section id="display_9" class="display_9">
+            <div class="container">
+                  <h2>Посмотреть и потрогать Занятный Дом в Минске</h2>
+                  <p>Купить Занятный Дом и Бизиборды можно в нашем шоуруме (офисе)*</p>
+                  <div class="map pd-60">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CBaTeAg1CB" width="1170" height="480" frameborder="0"></iframe>
+                  </div>
+                  <div class="row">
+                        <div class="col-4 contacts_1 pd-60">
+                              <div class="contact_card ml-auto mr-auto">
+                                    <h4 class="pd-30">Детский развивающий игровой<br>комплекс "Занятный Дом"</h4>
+                                    <p class="pd-10">ИП Грунтович А.А.,<br> УНП 191798712,<br> свидетельствово выдано ИМНС<br> Московского р-на г.Минска от 08.01.2013г</p>
+                              </div>
+                        </div>
+                        <div class="col-4 contacts_2 pd-60">
+                              <div class="contact_card ml-auto mr-auto">
+                                    <h4 class="pd-30">Пункт самовывоза</h4>
+                                    <p class="pd-10">д.Зацень, ул.Луговая, д.3 <br> (200м от кольцевой)</p>
+                                    <h4 class="pd-20">График работы:</h4>
+                                    <p class="pd-10">пн-пт с 9:00 до 18:00 <br>без обеда<br> сб, вс: выходной</p>
+                              </div>
+                        </div>
+                        <div class="col-4 contacts_3 pd-60">
+                              <div class="contact_card ml-auto mr-auto">
+                                    <h4 class="pd-30">Наши контакты</h4>
+                                    <p class="row sochial">
+                                          <a href="#" class="col ml-auto mr-auto"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                          <a href="#" class="col ml-auto mr-auto"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+                                          <a href="#" class="col ml-auto mr-auto"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                          <a href="#" class="col ml-auto mr-auto"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    </p>
+                                    <p class="pd-10">info@behygge.by</p>
+                                    <p class="pd-10">+375 (33) 669-77-39</p>
+                                    <p class="pd-10">+375 (44) 779-77-39</p>
+                                    <p class="pd-10">behyge</p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+      <footer>
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> bysuhouse.by /Все права защищены/2017</p>
+      </footer>
 
 
       <!-- Optional JavaScript -->
@@ -426,6 +521,8 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="js/script.js" type="text/javascript">
+      </script>
 </body>
 
 </html>
