@@ -21,7 +21,7 @@ a {
       font-size: 100%;
       vertical-align: baseline;
       background: transparent;
-      outline: none;
+      outline: 0 !important;
 }
 
 table {
@@ -94,18 +94,20 @@ body {
 
 a, a:visited {
       /* порядок правил для ссылок имеет значение */
-      color: #000;
+      color: #000 !important;
       text-decoration: none;
+      outline: 0 !important;
 }
 
 a:hover {
-      color: #76b700;
+      color: #76b700 !important;
       text-decoration: none;
 }
 
 a:focus, a:active {
-      color: #76b700;
+      color: #76b700 !important;
       text-decoration: none;
+      outline: 0 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -124,6 +126,14 @@ img {
       clear: both;
       content: "";
       display: table;
+}
+
+button:active, button:focus {
+      outline: none !important;
+}
+
+button::-moz-focus-inner {
+      border: 0 !important;
 }
 
 /* --------------- /базовые настройки ---------*/
@@ -247,9 +257,14 @@ h4 {
 
 /* ---------------------- Header -------------- */
 
+#fixmenu {
+      z-index: 500;
+      background-color: rgba(241, 240, 237, 0.7) !important;
+}
+
 header {
       background: #f2f1ee;
-      padding: 30px 0;
+      padding: 30px 0 0 0;
       margin: 0;
 }
 
@@ -260,26 +275,37 @@ header {
 }
 
 .menu {
-      margin-top: -5px;
+      margin-top: -10px;
+      /* background: #F1F0ED !important; */
 }
 
-.naw li:nth-child(1) a {
+nav {
+      padding-top: 20px !important;
+      text-align: center;
+}
+
+nav .active {
+      background: none !important;
+      color: #80bb22;
+}
+
+.naw li:nth-child(1) {
       padding-left: 10px;
 }
 
-.naw li:nth-child(2) a {
+.naw li:nth-child(2) {
       padding-right: 5px;
 }
 
-.naw li:nth-child(3) a {
+.naw li:nth-child(3) {
+      padding-right: 5px;
+}
+
+.naw li:nth-child(4) {
       padding-left: 15px;
 }
 
-.naw li:nth-child(4) a {
-      padding-left: 35px;
-}
-
-.naw li:nth-child(5) a {
+.naw li:nth-child(5) {
       padding-left: 40px;
 }
 
@@ -306,6 +332,7 @@ li a {
 }
 
 .phones {
+      margin-top: 5px;
       text-align: right;
       font-family: 'Roboto Slab', serif;
       font-weight: 400;
@@ -672,7 +699,7 @@ li a {
 
 .display_7 p {
       color: #fff;
-      font-weight: 500;
+      font-weight: 300;
       font-size: 16px;
 }
 
@@ -716,14 +743,14 @@ li a {
 }
 
 .border {
-      background: none !important;
+      background: rgba(0, 0, 0, 0.3) !important;
       height: 702px !important;
       border: 1px solid #fff !important;
       border-radius: 5px !important;
 }
 
 .img-block {
-      margin-top: 50px;
+      margin-top: 35px;
 }
 
 /* ------------------ endSection_7 -------------- */
@@ -823,4 +850,26 @@ footer {
       font-size: 12px;
       text-align: center;
       background: url('../img/footer_BG.jpg') no-repeat bottom center/cover;
+}
+
+.bottomUp {
+      text-align: center;
+      bottom: 20px;
+      left: -50px;
+      width: 65px;
+      height: 65px;
+      background: rgba(118, 183, 0, 0.7);
+      border-radius: 50%;
+}
+
+.bottomUp:hover {
+      background: rgba(255, 73, 51, 0.7);
+      transition: 0.3s;
+}
+
+.up i {
+      padding-top: 12px !important;
+      text-align: center;
+      font-size: 40px;
+      color: #fff;
 }
