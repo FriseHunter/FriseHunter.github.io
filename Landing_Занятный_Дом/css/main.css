@@ -855,7 +855,7 @@ footer {
 .bottomUp {
       text-align: center;
       bottom: 20px;
-      left: -50px;
+      left: 30px;
       width: 65px;
       height: 65px;
       background: rgba(118, 183, 0, 0.7);
