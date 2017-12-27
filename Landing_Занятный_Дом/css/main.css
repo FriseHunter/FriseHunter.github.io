@@ -255,6 +255,23 @@ h4 {
 
 /* ---------------------end My Classes------------- */
 
+/* --------------------- Modal Widows ------------- */
+
+.modalbtn {
+      text-align: center !important;
+}
+
+.modalText {
+      font-size: 14px;
+      font-weight: 400;
+}
+
+#carouselWoodHouse .active, #carouselLathurHouse .active, #carouselPinkHouse .active, #carouselMalysharHouse .active {
+      background: #76b700 !important;
+}
+
+/* ---------------------end Modal Widows------------- */
+
 /* ---------------------- Header -------------- */
 
 #fixmenu {
@@ -276,7 +293,6 @@ header {
 
 .menu {
       margin-top: -10px;
-      /* background: #F1F0ED !important; */
 }
 
 nav {
@@ -632,8 +648,6 @@ li a {
       font-weight: 700;
       text-transform: none;
 }
-
-.cash_1, .cash_2, .cash_3, .cash_4 {}
 
 .display_5 img {
       text-align: center;
