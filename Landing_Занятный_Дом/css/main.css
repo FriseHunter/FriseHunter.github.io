@@ -253,12 +253,30 @@ h4 {
       transition: 0.5s;
 }
 
+.shadow {
+      box-shadow: 0 5px 10px 1px #ddd;
+}
+
+.colorTeracot {
+      color: #ff4933;
+}
+
+.modalCaption {
+      text-transform: none;
+}
+
+.modalBtnMrgn {
+      font-family: 'Roboto', sans-serif;
+      margin-top: 15px;
+}
+
 /* ---------------------end My Classes------------- */
 
 /* --------------------- Modal Widows ------------- */
 
 .modalbtn {
       text-align: center !important;
+      text-transform: none;
 }
 
 .modalText {
@@ -266,8 +284,12 @@ h4 {
       font-weight: 400;
 }
 
-#carouselWoodHouse .active, #carouselLathurHouse .active, #carouselPinkHouse .active, #carouselMalysharHouse .active {
+#carouselWoodHouse .active, #carouselLathurHouse .active, #carouselPinkHouse .active, #carouselMalysharHouse .active, #barash .active, #niushaModal .active, #yojModal .active, #pandaModal .active, #rabbitModal .active, #sorterModal .active {
       background: #76b700 !important;
+}
+
+.quality_item {
+      margin-top: 30px;
 }
 
 /* ---------------------end Modal Widows------------- */
@@ -850,6 +872,10 @@ li a {
       width: 300px;
       height: 270px;
       box-shadow: 0 5px 10px 1px #ddd;
+}
+
+.contact_card img {
+      margin-bottom: -5px;
 }
 
 .sochial {
