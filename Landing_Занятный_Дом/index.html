@@ -723,7 +723,7 @@
             <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                         <div class="modal-header">
-                              <h2 class="modal-title ml-auto colorTeracot modalCaption" id="h2rabbit">Бизиборд “Кролик”</h2>
+                              <h2 class="modal-title ml-auto colorTeracot modalCaption" id="h2rabbit">Бизиборд “Крошик”</h2>
                               <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -799,7 +799,7 @@
             <div class="modal-dialog modal-lg" role="document">
                   <div class="modal-content">
                         <div class="modal-header">
-                              <h2 class="modal-title ml-auto colorTeracot modalCaption" id="h2sorter">Бизиборд “Кролик”</h2>
+                              <h2 class="modal-title ml-auto colorTeracot modalCaption" id="h2sorter">Бизиборд “Сортер”</h2>
                               <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -853,11 +853,9 @@
                               </div>
                               <div class="col-10 offset-1 modalText">
                                     <p><b>Возраст:</b> <br> Будет интересен и полезен детям от 1 до 5 лет</p><br>
-                                    <p><b>В чем польза: </b>Бизиборды «Малышарики» выполнены в виде любимых персонажей мультфильма<br> и помогают детям развивать мелкую моторику, творческое и логическое мышление,<br> максимально безопасно и комфортно адаптироваться
-                                          к бытовой среде. <br> Гармоничное развитие ребенка происходит в естественном <br> для детей игровом формате.</p><br>
-                                    <p><b>Игровые элементы:</b>лабиринт, шестеренки, молния и застежка, шнуровка и карман с кнопкой, две дверцы со шпингалетами, колокольчик и цепочка </p><br>
-                                    <p><b>Диаметр:</b>~ 1м</p><br>
-
+                                    <p><b>В чем польза: </b>Вариация на тему классического сортера выполнена в виде любимых персонажей мультфильма. Помогает детям развивать мелкую моторику и логическое мышление. Дополнительный плюс этого модуля: его части
+                                          никогда не потеряются, потому что соединены шнурками и прикреплены к бизиборду.</p><br>
+                                    <p><b>Игровые элементы: </b>Фигурки любимых персонажей соединенные шнурками с силуэтами различных предметов.</p><br>
                               </div>
                         </div>
                         <div class="modal-footer">
@@ -868,30 +866,71 @@
       </div>
       <!-- /////////////////////////////////////end modal windows malysharHouse //////////////////////////////////////////////////////-->
       <!-- /////////////////////////////////////modal windows formModal //////////////////////////////////////////////////////-->
-      <!-- <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
+      <div class="modal fade" id="formModalCall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
                   <div class="modal-content">
                         <div class="modal-header">
-                              <h2 class="modal-title ml-auto colorTeracot modalCaption" id="h2formModal">Купить "Занятный Дом"</h2>
-                              <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <h2 class="modal-title ml-auto txtCenter colorTeracot modalCaption" id="h2FormModalCall">Оставить заявку</h2>
+                              <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
                         </div>
                         <div class="row">
-                              <div class="modal-body">
+                              <div class="modal-body col-lg-6 offset-3">
+
                                     <form action="#">
                                           <input type="text" class="inputs" name="name" placeholder="имя" required><br>
                                           <input type="tel" class="inputs" name="phone" placeholder="номер телефона" required><br>
                                           <input type="text" class="inputs" name="promo" placeholder="промокод (если есть)"><br>
-                                          <button class="buttons">Купить</button>
+                                          <button class="buttons btnPadd">Купить</button>
                                     </form>
-                                    <p>* Ваши данные не будут переданы <br>третим лицам</p>
-                              </div>
-                              <div class="modal-footer">
-                                    <button type="button" class="buttonLinear col-5 ml-auto mr-auto modalBtnMrgn" data-dismiss="modal">Вернуться к выбору товара</button>
+                                    <!-- <p class="fz12">* Ваши данные не будут переданы<br> третим лицам</p> -->
                               </div>
                         </div>
+                        <!-- <div class="modal-footer">
+                              <button type="button" class="buttonLinear col-5 ml-auto mr-auto modalBtnMrgn" data-dismiss="modal">Вернуться</button>
+                        </div> -->
                   </div>
-            </div> -->
+            </div>
+      </div>
+
       <!-- /////////////////////////////////////end modal windows formModal //////////////////////////////////////////////////////-->
+      <!-- //////////////////////////////////////// modal windows partnerModal //////////////////////////////////////////////////////-->
+      <div class="modal fade" id="partnerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                        <div class="modal-header">
+                              <h2 class="modal-title ml-auto txtCenter colorTeracot modalCaption" id="h2partnerModal">Оставить заявку</h2>
+                              <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                        </div>
+                        <div class="row">
+                              <div class="modal-body col-lg-6 offset-3">
+
+                                    <form action="#">
+
+                                          <!-- Hidden Required Fields -->
+                                          <input type="hidden" name="project_name" value="Site Name">
+                                          <input type="hidden" name="admin_email" value="freesoul2708@gmail.com">
+                                          <input type="hidden" name="form_subject" value="Form Subject">
+                                          <!-- END Hidden Required Fields -->
+
+                                          <input type="text" class="inputs" name="name" placeholder="имя" required><br>
+                                          <input type="tel" class="inputs" name="phone" placeholder="номер телефона" required><br>
+                                          <input type="text" class="inputs" name="promo" placeholder="промокод (если есть)"><br>
+                                          <button class="buttons btnPadd">Купить</button>
+                                    </form>
+                                    <p class="fz12">* Ваши данные не будут переданы<br> третим лицам</p>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                              <button type="button" class="buttonLinear col-5 ml-auto mr-auto modalBtnMrgn" data-dismiss="modal">Вернуться</button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- /////////////////////////////////////end modal windows partnerModal //////////////////////////////////////////////////////-->
 
       <!--  конец всплывающие окна -->
       <header>
@@ -906,7 +945,7 @@
                               </div>
                               <div class="slog row">
                                     <h3 class="col">Официальный представитель в Республике Беларусь!</h3>
-                                    <button type="button" class="col-lg-3 buttonLinear" name="button">Заказать звонок</button>
+                                    <button type="button" class="col-lg-3 buttonLinear" name="button" data-toggle="modal" data-target="#formModalCall">Заказать звонок</button>
                               </div>
                         </div>
                   </div>
@@ -985,6 +1024,7 @@
                   </div>
             </div>
       </section>
+      <!-- Занятный дом -->
       <section class="display_3">
             <div class="container">
                   <h2>Выбери свой Занятный Дом!</h2>
@@ -994,32 +1034,33 @@
                               <h4>Занятный Дом"Деревянный"</h4>
                               <a href="#heppyHouse_1" data-toggle="modal" data-target="#woodHouse">подробнее</a>
                               <p>515 byn</p>
-                              <button class="buttons">купить</button>
+                              <button class="buttons" data-toggle="modal" data-target="#formModalCall">купить</button>
                         </div>
                         <div id="heppyHouse_2" class="col-lg-3 ml-auto mr-auto marfItem">
                               <img src="img/house_2.png" alt="">
                               <h4>Занятный Дом"Лазурный"</h4>
                               <a href="#heppyHouse_2" data-toggle="modal" data-target="#lathurHouse">подробнее</a>
                               <p>575 byn</p>
-                              <button class="buttons">купить</button>
+                              <button class="buttons" data-toggle="modal" data-target="#formModalCall">купить</button>
                         </div>
                         <div id="heppyHouse_3" class="col-lg-3 ml-auto mr-auto marfItem">
                               <img src="img/house_3.png" alt="">
                               <h4>Занятный Дом"Нежный"</h4>
                               <a href="#heppyHouse_3" data-toggle="modal" data-target="#PinkHouse">подробнее</a>
                               <p>575 byn</p>
-                              <button class="buttons">купить</button>
+                              <button class="buttons" data-toggle="modal" data-target="#formModalCall">купить</button>
                         </div>
                         <div id="heppyHouse_4" class="col-lg-3 ml-auto marfItem">
                               <img src="img/house_4.png" alt="">
                               <h4>Занятный Дом"Малышарики"</h4>
                               <a href="#heppyHouse_4" data-toggle="modal" data-target="#malysharHouse">подробнее</a>
                               <p>650 byn</p>
-                              <button class="buttons">купить</button>
+                              <button class="buttons" data-toggle="modal" data-target="#formModalCall">купить</button>
                         </div>
                   </div>
             </div>
       </section>
+      <!-- Малышарики -->
       <section class="display_4">
             <div class="container">
                   <h2>Малышарики и Занятный Дом </h2>
@@ -1030,7 +1071,7 @@
                                     <h4>Бизиборд <br>“Барашек”</h4>
                                     <a href="#barashHouse" data-toggle="modal" data-target="#barashModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 billbord">
@@ -1039,7 +1080,7 @@
                                     <h4>Бизиборд <br>“Нюшенька”</h4>
                                     <a href="#niushaHouse" data-toggle="modal" data-target="#niushaModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 billbord">
@@ -1048,7 +1089,7 @@
                                     <h4>Бизиборд <br>“Ежик”</h4>
                                     <a href="#yojHouse" data-toggle="modal" data-target="#yojModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
                               </div>
                         </div>
                         <div id="pandaHouse" class="col-xl-3 billbord">
@@ -1057,7 +1098,7 @@
                                     <h4>Бизиборд <br>“Пандочка”</h4>
                                     <a href="#pandaHouse" data-toggle="modal" data-target="#pandaModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class=" buttons">Купить</button>
+                                    <button class=" buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
                               </div>
                         </div>
                   </div>
@@ -1068,7 +1109,7 @@
                                     <h4>Бизиборд <br>“Крошик”</h4>
                                     <a href="#rabbitHouse" data-toggle="modal" data-target="#rabbitModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 ml-auto mr-auto billbord">
@@ -1077,7 +1118,7 @@
                                     <h4>Бизиборд <br>“Сортер”</h4>
                                     <a href="#sorterHouse" data-toggle="modal" data-target="#sorterModal">подробнее</a>
                                     <p>100 byn</p>
-                                    <button class="buttons">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 ml-auto mr-auto billbord">
@@ -1086,7 +1127,7 @@
                                     <h4>Занятный Дом <br>“Малышарики”</h4>
                                     <a href="#heppyHouseMalysh" data-toggle="modal" data-target="#malysharHouse">подробнее</a>
                                     <p>650 byn</p>
-                                    <button class="buttons">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
                               </div>
                         </div>
                   </div>
@@ -1210,6 +1251,9 @@
                               <li data-target="#carousel_2" data-slide-to="0" class="bullets_green active"></li>
                               <li data-target="#carousel_2" data-slide-to="1" class="bullets_green"></li>
                               <li data-target="#carousel_2" data-slide-to="2" class="bullets_green"></li>
+                              <li data-target="#carousel_2" data-slide-to="3" class="bullets_green"></li>
+                              <li data-target="#carousel_2" data-slide-to="4" class="bullets_green"></li>
+                              <li data-target="#carousel_2" data-slide-to="5" class="bullets_green"></li>
                         </ol>
 
                         <div class="carousel-inner">
@@ -1242,24 +1286,21 @@
                                     <div class="row">
                                           <div class="col-4 img-block">
                                                 <div class="sizeImg">
-                                                      <img class="d-block w-100" src="img/baby_1.jpg" alt="Второй отзыв">
+                                                      <img class="d-block w-100" src="reviews_img/2_1.jpg" alt="Второй отзыв">
                                                 </div>
                                                 <div class="sizeImg">
-                                                      <img class="d-block w-100" src="img/baby_2.jpg" alt="Второй отзыв">
+                                                      <img class="d-block w-100" src="reviews_img/2_2.jpg" alt="Второй отзыв">
                                                 </div>
                                           </div>
                                           <div class="col-7 img-block">
-                                                <h4>Ольга Кузьмина и сын Владислав</h4>
-                                                <p>Искала в интернете Бизиборд для сыночка Владислава, ему скоро будет годик. Хотелось найти что-то в форме Домика. Оказалось, что Домиков-Бизибордов в интернете и нет совсем, только здесь нашла.</p><br>
-                                                <p>Понравился сайт, как и сам Дом-Бизиборд. Оставила заявку, а далее со мной связался руководитель мастерской Арсений. Долго общались, все обсудили, и по оплате и по доставке. Выбрала доставку до пункта выдачи
-                                                      компании СДЭК. При доставке изменили адрес Пункта выдачи, пришлось проехаться чуть дальше. Но не критично, так как осталась очень довольна самим Занятным Домом.</p><br>
-                                                <p>Приятно было получить в подарок деревянный алфавит. На сайте про это нет информации, а в посылке оказался :) Мелочь, а приятно.</p><br>
-                                                <p>Сыну Занятный Дом тоже понравился. Он у меня очень осторожный, изучает Домик понемногу. Сейчас ему больше всего нравится играть с валиком и вертелками с животными/фигурками. <br> Еще показала Занятный Дом
-                                                      знакомым, всем очень понравился, но немного смущает стоимость, хотя, по факту, она складывается из того, что Занятный Дом - это целых 6 Бизибордов в 1. Все в одном месте, очень удобно на мой взгляд.
-                                                </p><br>
+                                                <h4>Анастасия Сидорова и племянница София / Москва (snastenka91@mail.ru)</h4>
+                                                <p>Нашла ребят в Яндексе, искала Бизиборд в подарок для любимой племяшки Софии на годик. Открыла несколько сайтов, долго сравнивала, все очень похожи, но понравился именно Занятный дом.</p><br>
+                                                <p>Смотрю на него и вот прям все есть - и замочки, и шнурки и дверцы. Так всего много! И даже во внутрь можно что-то положить.</p><br>
+                                                <p>Я из Москвы, но мне предложили удобную доставку из Санкт-Петербурга, что меня конечно подкупило и я оформила заказ. Доставили прямо домой. Оплатила сразу, перед отправкой.</p><br>
+                                                <p>Еще было приятно, что очень быстро позвонили, через 20 минут после того как я оставила заявку на сайте.</p><br>
                                                 <p>
-                                                      Рекомендую Занятный Дом всем, кто ответственно подходит к воспитанию и образованию своих детей.
-                                                </p>
+                                                      София больше всего оценила валик и дверцы с замочками, и около 2-х часов не отходила от домика в первый же день.</p><br>
+                                                <p>В общем я угадала с подарком на 100%. И София и ее мама остались очень довольны!) Спасибо!</p>
                                           </div>
                                     </div>
                               </div>
@@ -1267,24 +1308,76 @@
                                     <div class="row">
                                           <div class="col-4 img-block">
                                                 <div class="sizeImg">
-                                                      <img class="d-block w-100" src="img/baby_1.jpg" alt="Второй отзыв">
+                                                      <img class="d-block w-100" src="reviews_img/3_1.jpg" alt="Третий отзыв">
                                                 </div>
                                                 <div class="sizeImg">
-                                                      <img class="d-block w-100" src="img/baby_2.jpg" alt="Второй отзыв">
+                                                      <img class="d-block w-100" src="reviews_img/3_2.jpg" alt="Третий отзыв">
                                                 </div>
                                           </div>
                                           <div class="col-7 img-block">
-                                                <h4>Ольга Кузьмина и сын Владислав</h4>
-                                                <p>Искала в интернете Бизиборд для сыночка Владислава, ему скоро будет годик. Хотелось найти что-то в форме Домика. Оказалось, что Домиков-Бизибордов в интернете и нет совсем, только здесь нашла.</p><br>
-                                                <p>Понравился сайт, как и сам Дом-Бизиборд. Оставила заявку, а далее со мной связался руководитель мастерской Арсений. Долго общались, все обсудили, и по оплате и по доставке. Выбрала доставку до пункта выдачи
-                                                      компании СДЭК. При доставке изменили адрес Пункта выдачи, пришлось проехаться чуть дальше. Но не критично, так как осталась очень довольна самим Занятным Домом.</p><br>
-                                                <p>Приятно было получить в подарок деревянный алфавит. На сайте про это нет информации, а в посылке оказался :) Мелочь, а приятно.</p><br>
-                                                <p>Сыну Занятный Дом тоже понравился. Он у меня очень осторожный, изучает Домик понемногу. Сейчас ему больше всего нравится играть с валиком и вертелками с животными/фигурками. <br> Еще показала Занятный Дом
-                                                      знакомым, всем очень понравился, но немного смущает стоимость, хотя, по факту, она складывается из того, что Занятный Дом - это целых 6 Бизибордов в 1. Все в одном месте, очень удобно на мой взгляд.
-                                                </p><br>
-                                                <p>
-                                                      Рекомендую Занятный Дом всем, кто ответственно подходит к воспитанию и образованию своих детей.
-                                                </p>
+                                                <h4>Алина Фасхеева и сын / Москва</h4>
+                                                <p>Вчера забрали бизиборд с пункта выдачи, очень оперативно доставили. </p><br>
+                                                <p>Наш ребенок рад новой игрушке! Он как раз сейчас изучает цифры, и часики на бизиборде Продвигайка как нельзя кстати. И дорожки-зигзаги - вообще прелесть для маленьких пальчиков. </p><br>
+                                                <p>Очень качественно, стильно, красиво и полезно для детишек.</p><br>
+                                                <p>Спасибо)</p><br>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="border carousel-item">
+                                    <div class="row">
+                                          <div class="col-4 img-block">
+                                                <div class="sizeImg">
+                                                      <img class="d-block w-100" src="reviews_img/4_1.jpg" alt="Четвёртый отзыв">
+                                                </div>
+                                                <div class="sizeImg">
+                                                      <img class="d-block w-100" src="reviews_img/4_2.jpg" alt="Четвёртый отзыв">
+                                                </div>
+                                          </div>
+                                          <div class="col-7 img-block">
+                                                <h4>Диана Магарамова / Москва</h4>
+                                                <p>Мы получили дом! </p><br>
+                                                <p>Спасибо огромное за прекрасную идею создания занятного дома и за вашу доброту.</p><br>
+                                                <p>Благодаря вашей задумке развиваются дети и мы радуемся вместе с ними.</p><br>
+                                                <p>Желаю вам здоровья и процветания в вашем деле!</p><br>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="border carousel-item">
+                                    <div class="row">
+                                          <div class="col-4 img-block">
+                                                <div class="sizeImg">
+                                                      <img class="d-block w-100" src="reviews_img/5_1.jpg" alt="Четвёртый отзыв">
+                                                </div>
+                                                <div class="sizeImg">
+                                                      <img class="d-block w-100" src="reviews_img/5_2.jpg" alt="Четвёртый отзыв">
+                                                </div>
+                                          </div>
+                                          <div class="col-7 img-block">
+                                                <h4>Ксения Суворова и сын / Сургут</h4>
+                                                <p>Наш занятный домик теперь в Сургуте, очень понравился сыну!!! </p><br>
+                                                <p>Спасибо вам за быструю доставку!</p><br>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="border carousel-item">
+                                    <div class="row">
+                                          <div class="col-4 img-block">
+                                                <div class="sizeImg">
+                                                      <img class="d-block w-100" src="reviews_img/5_1.jpg" alt="Четвёртый отзыв">
+                                                </div>
+                                                <div class="sizeImg">
+                                                      <img class="d-block w-100" src="reviews_img/5_2.jpg" alt="Четвёртый отзыв">
+                                                </div>
+                                          </div>
+                                          <div class="col-7 img-block">
+                                                <h4>Наталья Ревенкова и дочь / Москва</h4>
+                                                <p>Домик курьер привез прямо домой, очень аккуратно запакованным в миенную коробку, надо сказать что для меня такие детали всегда важны и очень приятно было видеть такую продуманную упаковку.</p><br>
+                                                <p>Вообще все сделано со вкусом и большим вниманием к деталям. все выполнено очень красиво и аккуратно, пользоваться домиком сплошное удовольствие.</p><br>
+                                                <p>Сборка домика заняла минут 10-15, и уже в процессе ребёнок активно все вертел, крутил и открывал. Вообще можно было бы справиться и за 5 минут, если бы не такая "помощ".</p><br>
+                                                <p>Собственно с самого начала дочь не дала полностью собрать все стены, в итоге у нас одна стена домика осталась как большая дверца вообще наш домик больше используется не как бизиборд (несомненно очень удачный),
+                                                      а именно как дом!</p><br>
+                                                <p>Считаю эту находку производителей просто замечательной. Дочь постоянно прячет туда свои игрушки и (или) прячется сама, закрывая "дверь" изнутри.</p><br>
+                                                <p>Огромная благодарность за такой чудесный подарок!</p><br>
                                           </div>
                                     </div>
                               </div>
@@ -1340,8 +1433,8 @@
             <div class="container">
                   <h2>Посмотреть и потрогать Занятный Дом в Минске</h2>
                   <p>Купить Занятный Дом и Бизиборды можно в нашем шоуруме (офисе)*</p>
-                  <div class="map pd-60">
-                        <iframe src="https://yandex.ru/map-widget/v1/-/CBaTeAg1CB" width="1170" height="480" frameborder="0"></iframe>
+                  <div class="map pd-60 shadow">
+                        <iframe src="https://yandex.ru/map-widget/v1/-/CBahmZhitA" width="1170" height="480" frameborder="0"></iframe>
                   </div>
                   <div class="row">
                         <div class="col-4 contacts_1 pd-60">

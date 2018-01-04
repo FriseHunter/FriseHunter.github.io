@@ -172,6 +172,16 @@ h4 {
       padding: 0;
 }
 
+.txtCenter {
+      text-align: center;
+}
+
+.fz12 {
+      font-size: 14px;
+      opacity: 0.5;
+      text-align: center;
+}
+
 .pd-10 {
       padding-top: 10px !important;
 }
@@ -270,6 +280,18 @@ h4 {
       margin-top: 15px;
 }
 
+#formModalCall input {
+      border: 1px solid #80BB22;
+}
+
+#formModalCall .btnPadd {
+      padding: 10px 88px;
+}
+
+#formModalCall .btnPadd:hover {
+      margin-bottom: -2px;
+}
+
 /* ---------------------end My Classes------------- */
 
 /* --------------------- Modal Widows ------------- */
@@ -290,6 +312,10 @@ h4 {
 
 .quality_item {
       margin-top: 30px;
+}
+
+#h2FormModalCall {
+      margin-right: -40px;
 }
 
 /* ---------------------end Modal Widows------------- */
