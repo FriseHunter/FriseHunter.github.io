@@ -28,6 +28,10 @@
       <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
       <link rel="stylesheet" href="fonts/font-awesome.min.css" class="css">
       <link rel="stylesheet" href="css/main.css" class="css">
+
+
+
+
 </head>
 
 <body>
@@ -867,29 +871,23 @@
       <!-- /////////////////////////////////////end modal windows malysharHouse //////////////////////////////////////////////////////-->
       <!-- /////////////////////////////////////modal windows formModal //////////////////////////////////////////////////////-->
       <div class="modal fade" id="formModalCall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-md" role="document">
                   <div class="modal-content">
                         <div class="modal-header">
-                              <h2 class="modal-title ml-auto txtCenter colorTeracot modalCaption" id="h2FormModalCall">Оставить заявку</h2>
+                              <h2 class="modal-title ml-auto txtCenter colorTeracot modalCaption" id="h2FormModalCall">Заказать звонок</h2>
                               <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                         </div>
                         <div class="row">
-                              <div class="modal-body col-lg-6 offset-3">
+                              <div class="modal-body col">
 
-                                    <form class="form">
-                                          <!-- Hidden Required Fields -->
-                                          <input type="hidden" name="project_name" value="Лэндинг Занятный Дом">
-                                          <input type="hidden" name="admin_email" value="freesoul2708@gmail.com">
-                                          <input type="hidden" name="form_subject" value="Лэндинг Занятный Дом - Клиент заказал звонок из шапки сайта">
-                                          <!-- END Hidden Required Fields -->
+                                    <form action="./sendmail.php" data-them="Перезвонить клиенту">
 
-                                          <input type="text" class="inputs" name="name" placeholder="имя" required><br>
-                                          <input type="tel" class="inputs" name="phone" placeholder="номер телефона" required><br>
-                                          <input type="text" class="inputs" name="promo" placeholder="промокод (если есть)"><br>
-                                          <button class="buttons btnPadd">Отправить</button>
-                                    </form>
+                                          <input type="text" class="inputs " name="name" data-name="Имя: " placeholder="Имя" required><br>
+                                          <input type="tel" class="inputs " name="phone" data-name="Телефон: " placeholder="Контактный телефон" required><br>
+                                          <button class="buttons btnPadd ">Отправить</button>
+                                    </form><br>
                               </div>
                         </div>
                   </div>
@@ -902,37 +900,51 @@
             <div class="modal-dialog" role="document">
                   <div class="modal-content">
                         <div class="modal-header">
-                              <h2 class="modal-title ml-auto txtCenter colorTeracot modalCaption" id="h2partnerModal">Оставить заявку</h2>
+                              <h2 class="modal-title ml-auto txtCenter colorTeracot modalCaption" id="h2partnerModal">Стать партнером</h2>
                               <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
                         </div>
                         <div class="row">
-                              <div class="modal-body col-lg-6 offset-3">
+                              <div class="modal-body col">
 
                                     <form action="#">
-
-                                          <!-- Hidden Required Fields -->
-                                          <input type="hidden" name="project_name" value="Лэндинг Занятный Дом">
-                                          <input type="hidden" name="admin_email" value="freesoul2708@gmail.com">
-                                          <input type="hidden" name="form_subject" value="Лэндинг Занятный Дом - Клиент заказал звонок из шапки сайта">
-                                          <!-- END Hidden Required Fields -->
-
-                                          <input type="text" class="inputs" name="name" placeholder="имя" required><br>
-                                          <input type="tel" class="inputs" name="phone" placeholder="номер телефона" required><br>
-                                          <input type="text" class="inputs" name="promo" placeholder="промокод (если есть)"><br>
-                                          <button class="buttons btnPadd">Купить</button>
-                                    </form>
-                                    <p class="fz12">* Ваши данные не будут переданы<br> третим лицам</p>
+                                          <input type="text" class="inputs" name="name" placeholder="Имя" required><br>
+                                          <input type="tel" class="inputs" name="phone" placeholder="Контактный телефон" required><br>
+                                          <input type="email" class="inputs" name="e-mail" placeholder="Электронный адрес"><br>
+                                          <button class="buttons btnPadd">Отправить</button>
+                                    </form><br>
                               </div>
-                        </div>
-                        <div class="modal-footer">
-                              <button type="button" class="buttonLinear col-5 ml-auto mr-auto modalBtnMrgn" data-dismiss="modal">Вернуться</button>
                         </div>
                   </div>
             </div>
       </div>
       <!-- /////////////////////////////////////end modal windows partnerModal //////////////////////////////////////////////////////-->
+      <!-- //////////////////////////////////////// modal windows orderWindowsModal //////////////////////////////////////////////////////-->
+      <div class="modal fade" id="orderWindows" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                        <div class="modal-header">
+                              <h2 class="modal-title ml-auto txtCenter colorTeracot modalCaption" id="h2orderWindows">Оставить заявку</h2>
+                              <button type="button modalbtn" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                        </div>
+                        <div class="row">
+                              <div class="modal-body col">
+
+                                    <form action="#">
+                                          <input type="text" class="inputs" name="name" placeholder="Имя" required><br>
+                                          <input type="tel" class="inputs" name="phone" placeholder="Контактный телефон" required><br>
+                                          <input type="text" class="inputs" name="e-mail" placeholder="Промокод"><br>
+                                          <button class="buttons btnPadd">Отправить</button>
+                                    </form><br>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- /////////////////////////////////////end modal windows orderWindowsModal //////////////////////////////////////////////////////-->
 
       <!--  конец всплывающие окна -->
       <header>
@@ -1043,21 +1055,21 @@
                               <h4>Занятный Дом"Лазурный"</h4>
                               <a href="#heppyHouse_2" data-toggle="modal" data-target="#lathurHouse">подробнее</a>
                               <p>575 byn</p>
-                              <button class="buttons" data-toggle="modal" data-target="#formModalCall">купить</button>
+                              <button class="buttons" data-toggle="modal" data-target="#orderWindows">купить</button>
                         </div>
                         <div id="heppyHouse_3" class="col-lg-3 ml-auto mr-auto marfItem">
                               <img src="img/house_3.png" alt="">
                               <h4>Занятный Дом"Нежный"</h4>
                               <a href="#heppyHouse_3" data-toggle="modal" data-target="#PinkHouse">подробнее</a>
                               <p>575 byn</p>
-                              <button class="buttons" data-toggle="modal" data-target="#formModalCall">купить</button>
+                              <button class="buttons" data-toggle="modal" data-target="#orderWindows">купить</button>
                         </div>
                         <div id="heppyHouse_4" class="col-lg-3 ml-auto marfItem">
                               <img src="img/house_4.png" alt="">
                               <h4>Занятный Дом"Малышарики"</h4>
                               <a href="#heppyHouse_4" data-toggle="modal" data-target="#malysharHouse">подробнее</a>
                               <p>650 byn</p>
-                              <button class="buttons" data-toggle="modal" data-target="#formModalCall">купить</button>
+                              <button class="buttons" data-toggle="modal" data-target="#orderWindows">купить</button>
                         </div>
                   </div>
             </div>
@@ -1073,7 +1085,7 @@
                                     <h4>Бизиборд <br>“Барашек”</h4>
                                     <a href="#barashHouse" data-toggle="modal" data-target="#barashModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#orderWindows">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 billbord">
@@ -1082,7 +1094,7 @@
                                     <h4>Бизиборд <br>“Нюшенька”</h4>
                                     <a href="#niushaHouse" data-toggle="modal" data-target="#niushaModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#orderWindows">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 billbord">
@@ -1091,7 +1103,7 @@
                                     <h4>Бизиборд <br>“Ежик”</h4>
                                     <a href="#yojHouse" data-toggle="modal" data-target="#yojModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#orderWindows">Купить</button>
                               </div>
                         </div>
                         <div id="pandaHouse" class="col-xl-3 billbord">
@@ -1100,7 +1112,7 @@
                                     <h4>Бизиборд <br>“Пандочка”</h4>
                                     <a href="#pandaHouse" data-toggle="modal" data-target="#pandaModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class=" buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
+                                    <button class=" buttons" data-toggle="modal" data-target="#orderWindows">Купить</button>
                               </div>
                         </div>
                   </div>
@@ -1111,7 +1123,7 @@
                                     <h4>Бизиборд <br>“Крошик”</h4>
                                     <a href="#rabbitHouse" data-toggle="modal" data-target="#rabbitModal">подробнее</a>
                                     <p>235 byn</p>
-                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#orderWindows">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 ml-auto mr-auto billbord">
@@ -1120,7 +1132,7 @@
                                     <h4>Бизиборд <br>“Сортер”</h4>
                                     <a href="#sorterHouse" data-toggle="modal" data-target="#sorterModal">подробнее</a>
                                     <p>100 byn</p>
-                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#orderWindows">Купить</button>
                               </div>
                         </div>
                         <div class="col-xl-3 ml-auto mr-auto billbord">
@@ -1129,7 +1141,7 @@
                                     <h4>Занятный Дом <br>“Малышарики”</h4>
                                     <a href="#heppyHouseMalysh" data-toggle="modal" data-target="#malysharHouse">подробнее</a>
                                     <p>650 byn</p>
-                                    <button class="buttons" data-toggle="modal" data-target="#formModalCall">Купить</button>
+                                    <button class="buttons" data-toggle="modal" data-target="#orderWindows">Купить</button>
                               </div>
                         </div>
                   </div>
@@ -1428,7 +1440,7 @@
                         <div class="col-4 ml-auto mr auto"><img src="img/partter_6.png" alt="Партнёр"></div>
                         <div class="col-4 ml-auto mr auto"><img src="img/partter_7.png" alt="Партнёр"></div>
                   </div>
-                  <button class="buttonLinear_2" type="button" name="button">стать партнером</button>
+                  <button class="buttonLinear_2" type="button" name="button" data-toggle="modal" data-target="#partnerModal">стать партнером</button>
             </div>
       </section>
       <section id="display_9" class="display_9">
@@ -1484,11 +1496,17 @@
 
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./jquery.sendFormLP.js" type="text/javascript">
+      </script>
       <script src="js/script.js" type="text/javascript">
       </script>
+
+
 </body>
 
 </html>

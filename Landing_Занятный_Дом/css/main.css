@@ -280,12 +280,15 @@ h4 {
       margin-top: 15px;
 }
 
-#formModalCall input {
+#formModalCall input, #partnerModal input, #orderWindows input {
       border: 1px solid #80BB22;
+      margin-bottom: 15px;
 }
 
-#formModalCall .btnPadd {
+#formModalCall .btnPadd, #partnerModal .btnPadd, #orderWindows .btnPadd {
       padding: 10px 88px;
+      width: 90%;
+      margin-left: 5%;
 }
 
 #formModalCall .btnPadd:hover {
@@ -316,6 +319,11 @@ h4 {
 
 #h2FormModalCall {
       margin-right: -40px;
+}
+
+#formModalCall .inputs, #partnerModal .inputs, #orderWindows .inputs {
+      width: 90%;
+      margin-left: 5%;
 }
 
 /* ---------------------end Modal Widows------------- */
