@@ -426,11 +426,12 @@ li a {
 /* ----------------------Section_1--------------- */
 
 .display_1 {
-      background: url('../img/Fon_Present.jpg') no-repeat top center;
+      height: 100vh;
+      background: url('../img/Fon_Present.jpg') no-repeat center center;
 }
 
 .card_items {
-      margin: 295px 0 298px 70px;
+      margin: 100px 0 100px 70px;
       font-family: 'Roboto', sans-serif;
       text-align: center;
       width: 298px;
