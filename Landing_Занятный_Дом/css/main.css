@@ -761,6 +761,14 @@ li a {
       margin-bottom: -60px;
 }
 
+.videoPrev {
+      margin-left: -150px;
+}
+
+.videoNext {
+      margin-right: -150px;
+}
+
 /* ------------------ endSection_6 -------------- */
 
 /* --------------------- Section_7 -------------- */
