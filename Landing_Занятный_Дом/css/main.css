@@ -169,7 +169,7 @@ h4 {
 /* ---------------------My Classes------------- */
 
 .container {
-      padding: 0;
+      /*padding: 0;*/
 }
 
 .txtCenter {
@@ -295,6 +295,7 @@ h4 {
       margin-bottom: -2px;
 }
 
+
 /* ---------------------end My Classes------------- */
 
 /* --------------------- Modal Widows ------------- */
@@ -326,11 +327,37 @@ h4 {
       margin-left: 5%;
 }
 
+#size_1 .modal-header, #size_2 .modal-header, #size_3 .modal-header, #size_4 .modal-header {
+      border: 0 !important;
+}
+
+#size_1 button, #size_2 button, #size_3 button, #size_4 button {
+      text-align: center;
+      margin-top: 1px;
+      padding: 0 5px 5px 5px;
+      border-radius: 50%;
+      transition: 0.3s;
+}
+
+#size_1 button:hover, #size_2 button:hover, #size_3 button:hover, #size_4 button:hover {
+      background: #aaa;
+      color: #000;
+}
+
+.postOrder {
+      padding-top: 10px;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      font-size: 16px;
+      color: #ff4933;
+      line-height: normal;
+}
+
 /* ---------------------end Modal Widows------------- */
 
 /* ---------------------- Header -------------- */
 
-#fixmenu {
+.menu {
       z-index: 500;
       background-color: rgba(241, 240, 237, 0.7) !important;
 }
@@ -429,6 +456,10 @@ li a {
       height: 100vh;
       background: url('../img/Fon_Present.jpg') no-repeat center center;
 }
+.display_1 .card{
+            background: none;
+            border: 0;
+      }
 
 .card_items {
       margin: 130px 0 130px 70px;
@@ -641,13 +672,13 @@ li a {
 .billbord a {
       font-size: 16px;
       text-transform: uppercase;
-      color: #76b700;
+      color: #76b700 !important;
       font-weight: 700;
       letter-spacing: 1px;
 }
 
 .billbord a:hover {
-      color: #ff4933;
+      color: #ff4933 !important;
       transition: 0.3s;
 }
 
@@ -762,12 +793,9 @@ li a {
       margin-bottom: -60px;
 }
 
-.videoPrev {
-      margin-left: -150px;
-}
-
-.videoNext {
-      margin-right: -150px;
+.sliderContrnt {
+      width: 70%;
+      margin: 0 auto;
 }
 
 /* ------------------ endSection_6 -------------- */
@@ -961,4 +989,151 @@ footer {
       text-align: center;
       font-size: 40px;
       color: #fff;
+}
+
+/*////////////////////////////////media querys////////////////////////////////*/
+@media screen and (max-width: 1140px) {
+      h3{
+            font-size: 16px;
+      }
+      li a{
+            font-size: 13px;
+      }
+      .display_1 .card{
+            background: none;
+            border: 0;
+      }
+      .card_items{
+            margin-left: 0;
+
+      }
+      .phones{
+            font-size: 14px;
+      }
+      .video_8{
+            width: 100%;
+      }
+      header, section, footer{
+            width: 100%;
+            margin: 0 auto;
+      }
+      
+}
+@media screen and (max-width: 960px){
+      .logo{
+            margin: 10px 0;
+      }
+      .tema{
+            margin: 10px 0;
+      }
+      .slog{
+            display: none;
+      }
+      .slog button{
+            margin: 10px auto 20px;
+      }
+      .naw li{
+            text-align: center;
+            
+            margin: 5px 0;
+            padding-left: 0!important;
+            padding-right: 0!important;
+      
+      }
+      .naw li a{
+            font-size: 15px;
+            font-weight: 500;
+      }
+      .fa-phone{
+            font-size: 19px!important;
+      }
+      .display_1 .card{
+            background: none;
+            border: 0;
+      }
+      .img_8{
+            display: none;
+      }
+      .display_1{
+      background: url('../img/Fon_Present.jpg') no-repeat center center / cover;
+      }
+      .marfItem{
+            margin: 0 auto;
+      }
+      .billbord_module{
+            margin: 20px auto 0;
+      }
+      .sizePlan {
+            text-align: center;
+      }
+      .display_5 img{
+            padding: 20px 0;
+      }
+      .display_5 p{
+            margin-bottom: 50px;
+      }
+      .cashAlign{
+            text-align: center;
+      }
+      .sizeImg {
+       width: 100% !important; 
+       text-align: right;  
+      }
+
+      .sizeImgItem{
+            margin: 0 auto;
+             width: 75%!important; 
+      }
+      .display_7 h4{
+            margin-bottom:20px;
+      }
+      .display_7 p{
+            font-size: 15px;
+      }
+      .display_8 .card_items{
+            margin: 30px auto;
+      }
+}
+@media screen and (max-width: 720px) {
+      .logo{
+            text-align: center;
+      }
+      header h3{
+            text-align: center;
+      }
+      .menu button{
+            margin: 0 auto;
+      }
+      .display_1{
+      background: url('../img/Fon_Present.jpg') no-repeat center center;
+      }
+      .bottomUp{
+            left: 0;
+      }
+      .display_1 .card{
+            border: 0;
+            background: none;
+            margin: 100px 0;
+      }
+      .display_1 .card_items{
+            margin: 0 auto;
+      }
+      .sizeImg{
+            display: none;
+      }
+      .display_7 h4{
+            margin-bottom:10px;
+            font-size: 16px;
+      }
+
+      .display_7 p{
+            font-size: 13px;
+      }
+      .img-block{
+                margin-right: 8.333333%;
+      }
+      .sochial a{
+            margin: 0 auto;
+            width: auto;
+      }
 }
