@@ -224,8 +224,24 @@ p {
       font-size: 16px;
 }
 
+.clr-white {
+      color: #fff !important;
+}
+
 .lower {
       text-transform: lowercase;
+}
+
+.m_center {
+      margin: 0 auto !important;
+}
+
+.left_side {
+      margin-left: -70px;
+}
+
+.right_side {
+      margin-right: -70px;
 }
 
 .upper {
@@ -255,6 +271,10 @@ p {
       font-weight: 700 !important;
       font-size: 18px;
       cursor: pointer;
+}
+
+.b-rad {
+      border-radius: 5px;
 }
 
 /************************************************** end My Styles *********************************************/
@@ -365,7 +385,7 @@ nav ul {
       border-radius: 5px;
 }
 
-.equipment h2, h4 {
+.equipment h2, .equipment h2 {
       color: #fff !important;
 }
 
@@ -478,5 +498,29 @@ nav ul {
 }
 
 /************************************************** end spares  *************************************************/
+
+/************************************************** news  *************************************************/
+
+/************************************************** end news  *************************************************/
+
+/************************************************** video  *************************************************/
+
+.video {
+      background: url('../img/backgrounds/bg_7.jpg') no-repeat center center/cover;
+      padding: 50px 0;
+      text-align: center;
+}
+
+.video h2 {
+      color: #fff;
+      padding-bottom: 25px;
+}
+
+#carousel_Video {
+      max-width: 100%;
+      /* margin: 0 auto; */
+}
+
+/************************************************** end video  *************************************************/
 
 /*********************************************** end other cod *************************************************/
