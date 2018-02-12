@@ -1,0 +1,482 @@
+/***************************************** fonts ********************************************/
+
+@font-face {
+      font-family: PFDinTextPro;
+      src: url(../fonts/PFDinTextPro/PFDinTextPro-Bold_0.ttf);
+      font-weight: 700;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: PFDinTextPro;
+      src: url(../fonts/PFDinTextPro/PFDinTextPro-Medium.ttf);
+      font-weight: 500;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: PFDinTextPro;
+      src: url(../fonts/PFDinTextPro/PFDinTextPro-Regular_1.ttf);
+      font-weight: 400;
+      font-style: normal;
+}
+
+@font-face {
+      font-family: PFDinTextPro;
+      src: url(../fonts/PFDinTextPro/PFDinTextPro-Light.ttf);
+      font-weight: 300;
+      font-style: normal;
+}
+
+/***************************************** end fonts ********************************************/
+
+/* --------------- reset.css --------------- */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      /* обнуляем отступы и убираем бордюры */
+      vertical-align: baseline;
+      /* приводим все к одной базовой линии */
+      background: transparent;
+      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+      font-size: 100%;
+      /* размер шрифта всем одинаковый */
+}
+
+a {
+      /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+      outline: 0 !important;
+}
+
+table {
+      /* устраняем отступы между ячейками таблицы */
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+td, td img {
+      vertical-align: top;
+      /* возвращаем привычное вертикальное выравнивание */
+}
+
+input, select, button, textarea {
+      margin: 0;
+      /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+      font-size: 100%;
+      /* делаем размер шрифтов везде одинаковым */
+      outline: none;
+}
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"], textarea {
+      padding: 0 0 9px 0 !important;
+      -moz-padding: 0 0 5px 20px;
+      /* убираем внутренние отступы для текстовых полей */
+}
+
+input[type="checkbox"] {
+      /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+      vertical-align: bottom;
+}
+
+input[type="radio"] {
+      vertical-align: text-bottom;
+}
+
+sub {
+      vertical-align: sub;
+      font-size: smaller;
+}
+
+sup {
+      vertical-align: super;
+      font-size: smaller;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+}
+
+nav ul {
+      list-style: none;
+}
+
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+
+html {
+      min-height: 100%;
+      /* всегда показываем вертикальную полосу прокрутки  */
+}
+
+body {
+      color: #000;
+      text-align: left;
+      font-size: 1em;
+      /* используем безопасные шрифтовые CSS стеки */
+      min-height: 100%;
+}
+
+a, a:visited {
+      /* порядок правил для ссылок имеет значение */
+      color: #003462 !important;
+      text-decoration: none;
+      outline: 0 !important;
+}
+
+a:hover {
+      color: #fff !important;
+      text-decoration: none;
+      transition: all 0.3s linear;
+}
+
+a:focus, a:active {
+      color: #fff !important;
+      text-decoration: none;
+      outline: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+}
+
+img {
+      max-width: 100%;
+}
+
+.clr {
+      clear: both;
+}
+
+.clearfix:after {
+      clear: both;
+      content: "";
+      display: table;
+}
+
+button:active, button:focus {
+      outline: none !important;
+}
+
+button::-moz-focus-inner {
+      border: 0 !important;
+}
+
+@-moz-document url-prefix() {
+      .style {
+            padding: 0 0 2px 0;
+      }
+}
+
+/* --------------- /базовые настройки ---------*/
+
+/**************************************************** My Styles ***********************************************/
+
+body {
+      background: url('../img/backgrounds/bg_fix.png') no-repeat center center/cover;
+      background-attachment: fixed;
+      height: 100vh;
+}
+
+h2 {
+      font-size: 36px;
+      font-weight: 400 !important;
+      text-transform: uppercase;
+}
+
+h3 {
+      font-size: 28px;
+      font-weight: 400 !important;
+      text-transform: uppercase;
+}
+
+h4 {
+      font-size: 24px;
+      font-weight: 400 !important;
+      text-transform: uppercase;
+}
+
+p {
+      font-size: 18px;
+      font-weight: 400;
+      color: #646464;
+}
+
+.container {
+      /* border: 1px solid red; */
+      font-family: PFDinTextPro, monospace;
+      color: #003462;
+}
+
+.fz18 {
+      font-size: 18px;
+}
+
+.fz16 {
+      font-size: 16px;
+}
+
+.lower {
+      text-transform: lowercase;
+}
+
+.upper {
+      text-transform: uppercase;
+}
+
+.linear__btn {
+      height: 38px;
+      font-size: 20px;
+      color: #003462;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: none;
+      border-radius: 5px;
+      border: 1px solid #003462;
+      padding: 0 20px;
+      cursor: pointer;
+}
+
+.sint_btn {
+      background: #84c9d8;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      padding: 1px 36px;
+      text-transform: uppercase;
+      color: #003462;
+      font-weight: 700 !important;
+      font-size: 18px;
+      cursor: pointer;
+}
+
+/************************************************** end My Styles *********************************************/
+
+/*************************************************** other cod ************************************************/
+
+/************************************************** Header ****************************************************/
+
+header {
+      background: #ebeff3;
+      height: 100px;
+}
+
+.phone p {
+      color: #06235f;
+}
+
+header button {
+      margin: -5px -15px 0 0;
+}
+
+.haed {
+      height: 100px;
+      padding-top: 23px;
+}
+
+.align_i_c {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      -ms-align-items: baseline;
+      align-items: baseline;
+}
+
+.sots {}
+
+.phone__item {
+      font-weight: 400;
+}
+
+.space_a {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-around;
+}
+
+/********************************************** end Header ****************************************************/
+
+/************************************************** Nav  ******************************************************/
+
+nav {
+      background: rgba(132, 201, 216, 0.75);
+}
+
+nav ul {
+      text-transform: uppercase;
+      font-family: PFDinTextPro, monospace;
+      font-weight: 700;
+}
+
+/********************************************** end Nav  ******************************************************/
+
+/********************************************** display_1  ****************************************************/
+
+.display_1 {
+      background: #ebeff3;
+}
+
+#offer_corusele {
+      margin: 110px auto 50px;
+      border-radius: 5px;
+}
+
+.carousel-inner {
+      border-radius: 5px;
+}
+
+/********************************************** end display_1  *************************************************/
+
+/**************************************************** quality  *************************************************/
+
+.quality {
+      text-align: center;
+      padding: 40px 0;
+}
+
+.q-icon {
+      /* padding: 36px 0 25px 0; */
+      margin: 26px auto 15px;
+      height: 100px;
+      width: 100px;
+      border: 1px solid #06235f;
+      border-radius: 50%;
+}
+
+/************************************************** end quality  *************************************************/
+
+/************************************************** equipment  *************************************************/
+
+.equipment {
+      padding: 50px 0;
+      background: url('../img/backgrounds/Bg_3.jpg') no-repeat center center/cover;
+      text-align: center;
+}
+
+.equipment img {
+      border-radius: 5px;
+}
+
+.equipment h2, h4 {
+      color: #fff !important;
+}
+
+.equipment h2 {
+      padding-bottom: 25px;
+}
+
+.equipment h4 {
+      padding-top: 15px;
+}
+
+.equipment p {
+      text-align: left;
+      color: #fff;
+      font-size: 15px;
+      line-height: 18px;
+}
+
+.equipment__card {
+      max-width: 22.5% !important;
+      position: relative;
+      padding: 15px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      margin: 30px 15px 15px 15px;
+}
+
+.equipment__card button {
+      position: absolute;
+      margin: 0 -86px 30px !important;
+}
+
+/************************************************** end equipment  *************************************************/
+
+/************************************************** form  *************************************************/
+
+.form {
+      text-align: center;
+      padding: 50px 0;
+}
+
+.inputs__team {
+      background: rgba(132, 201, 216, 0.5);
+      padding: 30px;
+      border-radius: 5px;
+}
+
+.form h4 {
+      padding: 25px 0;
+      color: #06235f !important;
+}
+
+.inputs {
+      max-width: 22.5%;
+      margin: 0 15px;
+      padding: 0 0 9px 0 !important;
+      background: none;
+      border: 0;
+      border-bottom: 1px solid #06235f;
+}
+
+/************************************************** end form  *************************************************/
+
+/************************************************** spares  *************************************************/
+
+.spares {
+      padding: 50px 0;
+      background: url('../img/backgrounds/Bg_5.jpg') no-repeat center center/cover;
+      text-align: center;
+}
+
+.spares h2, h4 {
+      color: #06235f !important;
+}
+
+.spares img {
+      border-radius: 5px;
+}
+
+.spares h2 {
+      padding-bottom: 25px;
+}
+
+.spares h4 {
+      padding-top: 15px;
+}
+
+.spares p {
+      color: #06235f;
+      text-align: left;
+      font-size: 15px;
+      line-height: 18px;
+}
+
+.spares__card {
+      max-width: 22.5% !important;
+      position: relative;
+      padding: 15px;
+      border: 1px solid #06235f;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      margin: 30px 15px 15px 15px;
+}
+
+.spares__card button {
+      border: 1px solid #06235f;
+      position: absolute;
+      margin: 0 -86px 30px !important;
+      background: #fff;
+}
+
+/************************************************** end spares  *************************************************/
+
+/*********************************************** end other cod *************************************************/
