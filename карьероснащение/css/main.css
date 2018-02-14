@@ -309,7 +309,7 @@ header {
       color: #06235f;
 }
 
-header button {
+header .linear__btn {
       margin: -5px -15px 0 0;
 }
 
@@ -345,6 +345,7 @@ header button {
 
 nav {
       background: rgba(132, 201, 216, 0.75);
+      z-index: 10000;
 }
 
 nav ul {
@@ -362,12 +363,46 @@ nav ul {
 }
 
 #offer_corusele {
-      margin: 110px auto 50px;
+      margin: 50px auto 50px;
       border-radius: 5px;
 }
 
 .carousel-inner {
       border-radius: 5px;
+}
+
+.button_Up {
+      position: fixed;
+      text-align: center;
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: #06235f;
+      opacity: 0.5;
+      z-index: 10000;
+      bottom: 25px;
+      right: 35px
+}
+
+.button_Up:hover {
+      opacity: 0.86;
+}
+
+.button_Up p {
+      font-size: 52.5px;
+      color: #82cada;
+      opacity: 0.68;
+}
+
+.button_Up i {
+      padding: 5px;
+}
+
+.click_aria {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #82cada;
 }
 
 /********************************************** end display_1  *************************************************/
