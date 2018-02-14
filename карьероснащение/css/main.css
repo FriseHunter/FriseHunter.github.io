@@ -381,7 +381,7 @@ nav ul {
       opacity: 0.5;
       z-index: 10000;
       bottom: 25px;
-      right: 35px
+      right: 25px;
 }
 
 .button_Up:hover {
@@ -578,11 +578,11 @@ nav ul {
 }
 
 #carouselNews .carousel-control-prev {
-      margin-left: -135px;
+      margin-left: -100px;
 }
 
 #carouselNews .carousel-control-next {
-      margin-right: -135px;
+      margin-right: -100px;
 }
 
 /************************************************** end news  *************************************************/
