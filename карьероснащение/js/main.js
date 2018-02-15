@@ -4,13 +4,13 @@ $(function() {
             if (top < 100) $("#fixmenu").css({
                   top: '0',
                   position: 'relative',
-                  zIndex: '10000' ,
+                  zIndex: '50' ,
             });
             else $("#fixmenu").css({
                   top: '0',
                   position: 'fixed',
                   width: '100%',
-                  zIndex: '10000' ,
+                  zIndex: '50' ,
                   transition: '0.3s',
             });
       });

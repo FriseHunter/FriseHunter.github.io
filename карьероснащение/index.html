@@ -18,21 +18,19 @@
       <![endif] -->
 
       <title>Карьероснащение</title>
-      <!-- ************************************************ stylesheets ************************************************** -->
-      <link rel="stylesheet" href="./css/main.css">
-      <link rel="stylesheet" href="./css/bootstrap.min.css">
+
 
       <!-- ******************************************************* fonts ************************************************** -->
       <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+      <!-- ************************************************ stylesheets ************************************************** -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/main.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
 
 
       <!--************************************************* source_js *******************************************************-->
 
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>-->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
       <!--********************************************* end_source_js *******************************************************-->
 </head>
@@ -52,7 +50,7 @@
                         <div class="phone col-lg-6 space_a fz18">
                               <p class="phone__item"><i class="fas fa-phone"></i> 8 800 200 98 44 </p>
                               <p class="phone__item"><i class="fas fa-phone"></i> 8 996 000 00 44 </p>
-                              <button class="linear__btn">заказать звонок</button>
+                              <button type="button" class="linear__btn" data-toggle="modal" data-target="#callModal"><i class="fas fa-phone-volume fa-sm"></i><span>заказать звонок</span></button>
                         </div>
                   </div>
             </div>
@@ -210,13 +208,12 @@
                   <h2>есть вопросы?</h2>
                   <h4>Закажите звонок и мы перезвоним Вам</h4>
                   <form class="row inputs__team space_a">
-                        <input class="col-lg inputs" name="name" type="text" placeholder="Имя">
-                        <input class="col-lg inputs" name="phone" type="tel" placeholder="Телефон">
-                        <input class="col-lg inputs" name="mail" type="email" placeholder="E-mail">
+                        <input class="col-lg inputs" name="name" type="text" placeholder="Имя" required>
+                        <input class="col-lg inputs" name="phone" type="tel" placeholder="Телефон" required>
+                        <input class="col-lg inputs" name="mail" type="email" placeholder="E-mail" required>
                         <button type="submit" name="button" class="col-lg linear__btn">заказать звонок</button>
                         <p class="worn col-lg-12">*Введенная Вами информация конфиденциальна и не передается третьим лицам.</p>
                   </form>
-
             </div>
       </section>
       <section id="spares" class="spares">
@@ -445,13 +442,50 @@
       <footer>
             <p>Copyright © 2017 ООО«Карьер-Оснащение» </p>
       </footer>
+      <!-- **************************************** modalWindows*********************************************** -->
+      <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                        <div class="modal-header mr-auto ml-auto row">
+                              <h3 class="col-8 offset-2" id="exampleModalLabel"><b>Заказать звонок</b></h3>
+                              <button type="button" class="close col-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                        </div>
+                        <div class="modal-body">
+                              <form class="row">
+                                    <input class="col-lg-8 ml-auto mr-auto inputs" name="name" type="text" placeholder="Имя" required>
+                                    <input class="col-lg-8 ml-auto mr-auto inputs" name="phone" type="tel" placeholder="Телефон" required>
+                                    <input class="col-lg-8 ml-auto mr-auto inputs" name="mail" type="email" placeholder="E-mail" required>
+                                    <button type="submit" name="button" class="col-lg-8 ml-auto mr-auto linear__btn">заказать звонок</button>
+                                    <p class="worn col-lg-6 mr-auto ml-auto">*Введенная Вами информация конфиденциальна и не передается третьим лицам.</p>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- ************************************* endModalWindows*********************************************** -->
+
 
       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
       <!--************************************************* My_js ************************************************************-->
+
+
+      <script type="text/javascript" src="./js/main.js">
+      </script>
+      <script type="text/javascript" src="./js/jquery.maskedinput.min.js">
+      </script>
+      <script type="text/javascript" src="./js/bootstrap.min.js">
+      </script>
+      <script type="text/javascript" src="./mailScript.js">
+      </script>
       <script>
             $('.toAnchor').on('click', function() {
                   $('.navbar-collapse').removeClass('show');
@@ -462,14 +496,15 @@
                   return false;
             });
       </script>
-
-      <script type="text/javascript" src="./js/main.js">
-      </script>
-      <script type="text/javascript" src="./js/jquery.maskedinput.min.js">
-      </script>
-      <script type="text/javascript" src="./js/bootstrap.min.js">
-      </script>
-      <script type="text/javascript" src="./mailScript.js">
+      <script>
+            $('.toAnchor').on('click', function() {
+                  $('.navbar-collapse').removeClass('show');
+                  $a = $($(this).attr('href'));
+                  $('html,body').animate({
+                        scrollTop: $a.offset().top - 50
+                  }, 500);
+                  return false;
+            });
       </script>
 </body>
 
