@@ -318,6 +318,20 @@ p {
       border: 1px solid #84c9d8;
 }
 
+.anchorToOtherPage {
+      margin: 30px auto;
+      text-transform: uppercase;
+}
+
+.anchorToOtherPage a {
+      color: #84c9d8 !important;
+      text-decoration: none !important;
+}
+
+.anchorToOtherPage a:hover {
+      color: #fff !important;
+}
+
 /************************************************** end My Styles *********************************************/
 
 /*************************************************** other cod ************************************************/
@@ -700,6 +714,57 @@ footer p {
 }
 
 /************************************************** end footer  *************************************************/
+
+/************************************************** equipment page  *************************************************/
+
+#equipment_collapse {
+      padding: 50px 0;
+}
+
+#equipment_collapse p {
+      color: #06235f !important;
+}
+
+.card-header {
+      text-align: center;
+}
+
+.header_item {
+      height: 50px;
+      font-size: 16px;
+      margin-top: 6px;
+      border-left: 1px solid lightgrey;
+}
+
+.card-header {
+      width: 100%;
+}
+
+.content_accord p {
+      /* height: 50px; */
+      font-size: 16px;
+      margin-top: 6px;
+      border-left: 1px solid lightgrey;
+}
+
+#header_accord .header_item p {
+      font-size: 14px;
+}
+
+#header_accord>.header_item:nth-child(1) {
+      border: 0;
+}
+
+.p_accord {
+      font-size: 15px;
+}
+
+.descr_accord {
+      padding: 30px 0;
+      font-size: 15px;
+}
+
+/************************************************** end equipment page *************************************************/
 
 /************************************************** modal *************************************************/
 
