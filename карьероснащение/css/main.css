@@ -83,7 +83,7 @@ input[type="text"], input[type="password"], input[type="tel"], input[type="email
 
 input[type="checkbox"] {
       /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
-      vertical-align: bottom;
+      vertical-align: center;
 }
 
 input[type="radio"] {
@@ -105,7 +105,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 nav ul {
+      padding: 0;
+      margin: 0;
       list-style: none;
+}
+
+li {
+      padding: 0;
+      margin: 0;
 }
 
 /* --------------- /reset.css --------------- */
@@ -290,7 +297,7 @@ p {
 .sint_btn:hover {
       background: #003462;
       color: #84c9d8;
-      transition: all 0.2 linear;
+      transition: all 0.2s linear;
 }
 
 .sint_btn:active {
@@ -332,6 +339,10 @@ p {
       color: #fff !important;
 }
 
+.txt_left {
+      text-align: left !important;
+}
+
 /************************************************** end My Styles *********************************************/
 
 /*************************************************** other cod ************************************************/
@@ -343,7 +354,7 @@ header {
 }
 
 .logo {
-      margin-top: -30px;
+      /* margin-top: -30px; */
 }
 
 .phone p {
@@ -362,8 +373,8 @@ header .linear__btn {
       display: -webkit-flex;
       display: -ms-flex;
       display: flex;
-      -ms-align-items: baseline;
-      align-items: baseline;
+      -ms-align-items: center;
+      align-items: center;
 }
 
 .sots {}
@@ -425,11 +436,12 @@ nav ul {
       width: 75px;
       height: 75px;
       border-radius: 50%;
-      background: #06235f;
+      background: #82cada;
       opacity: 0.5;
       z-index: 10000;
       bottom: 25px;
       right: 25px;
+      transition: 0.5s all linear;
 }
 
 .button_Up:hover {
@@ -438,8 +450,13 @@ nav ul {
 
 .button_Up p {
       font-size: 52.5px;
-      color: #82cada;
+      color: #fff;
       opacity: 0.68;
+      transition: 0.5s all linear;
+}
+
+.button_Up p:hover {
+      color: #06235f;
 }
 
 .button_Up i {
@@ -457,12 +474,21 @@ nav ul {
 
 /**************************************************** quality  *************************************************/
 
+.quality_item img {
+      padding-top: 15px;
+      color: #06235f;
+      width: 50px;
+}
+
 .quality {
       text-align: center;
       padding: 40px 0;
 }
 
 .q-icon {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
       /* padding: 36px 0 25px 0; */
       margin: 26px auto 15px;
       height: 100px;
@@ -657,6 +683,16 @@ nav ul {
 
 /************************************************** contacts  *************************************************/
 
+.contacts_line {
+      padding: 0;
+      margin: 0;
+}
+
+.contacts_line p {
+      font-size: 17.3px !important;
+      color: inherit;
+}
+
 .contacts {
       text-align: center;
       padding: 50px 0;
@@ -717,6 +753,16 @@ footer p {
 
 /************************************************** equipment page  *************************************************/
 
+.btn-link {
+      width: 100%;
+      text-align: left !important;
+}
+
+#equipment_collapse .fa-sort-down {
+      margin-bottom: 3px;
+      float: right;
+}
+
 #equipment_collapse {
       padding: 50px 0;
 }
@@ -741,7 +787,6 @@ footer p {
 }
 
 .content_accord p {
-      /* height: 50px; */
       font-size: 16px;
       margin-top: 6px;
       border-left: 1px solid lightgrey;
@@ -764,7 +809,169 @@ footer p {
       font-size: 15px;
 }
 
+#collapse_2 .descr_accord {
+      padding-bottom: 0;
+}
+
+#collapse_2 ul {
+      margin-left: 70px;
+}
+
+#equipment_collapse .equ_h2 {
+      text-align: center;
+      padding-bottom: 30px;
+}
+
 /************************************************** end equipment page *************************************************/
+
+/************************************************** spares page *************************************************/
+
+#equipment_collapse h4 {
+      margin: 50px auto;
+}
+
+.spares_accordion .card {
+      background: none;
+}
+
+.spares_accordion .card_header {
+      background: none;
+}
+
+.spares_accordion .content_accord p {
+      border: 0;
+      padding-top: 3px;
+}
+
+.spares_accordion .header_item {
+      border: 0;
+      margin-left: 15px;
+}
+
+.spares_accordion .form input {
+      text-align: center;
+      border: 0;
+      background: none;
+      color: #06235f;
+      font-size: 18px;
+}
+
+.spares_accordion .form table {
+      box-shadow: 0 5px 7px 0 #d5d5d5;
+      border-radius: 5px;
+      width: 100%;
+}
+
+.spares_accordion .form td {
+      padding: 15px 15px 10px 15px;
+      border-radius: 5px;
+}
+
+.spares_accordion thead {
+      /* border-bottom: 1px solid #06235f; */
+      text-transform: uppercase;
+      font-weight: 700;
+}
+
+.spares_accordion .form button {
+      margin-top: 30px;
+}
+
+input[type="number"] {
+      padding-left: 5px;
+      width: 50px !important;
+      background: rgba(130, 202, 218, 0.2) !important;
+      border-radius: 5px;
+      box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.checkbox input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      margin: 10px 0 0 20px;
+}
+
+.checkbox__text {
+      position: relative;
+      padding: 0 0 0 60px;
+      cursor: pointer;
+}
+
+.checkbox__text:before {
+      content: '';
+      position: absolute;
+      top: -9px;
+      left: 0;
+      width: 50px;
+      height: 26px;
+      border-radius: 13px;
+      background: rgba(130, 202, 218, 0.2);
+      box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+      transition: .2s;
+}
+
+.checkbox__text:after {
+      content: '';
+      position: absolute;
+      top: -7px;
+      left: 2px;
+      width: 22px;
+      height: 22px;
+      border-radius: 10px;
+      background: #FFF;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+      transition: .2s;
+}
+
+.checkbox input:checked+.checkbox__text:before {
+      background: #82cada;
+}
+
+.checkbox input:checked+.checkbox__text:after {
+      left: 26px;
+}
+
+.zebra_blue {
+      background: rgba(92, 187, 206, 0.18) !important;
+}
+
+.zebra_white {
+      background: rgba(255, 255, 255, 0.56) !important;
+}
+
+/************************************************** end spares page **********************************************/
+
+/************************************************** news page **********************************************/
+
+#mainNews ul {
+      list-style: none;
+}
+
+#mainNews h2 {
+      padding: 50px 0;
+      text-align: center;
+      /* border: 1px solid red; */
+}
+
+.newsItem {
+      margin: 30px 0;
+}
+
+.imgMainNews {
+      height: 200px;
+}
+
+.imgMainNews img {
+      padding: 0 30px 0 0;
+      float: left;
+}
+
+.txtMainNews {
+      display: none;
+}
+
+/************************************************** end news page **********************************************/
 
 /************************************************** modal *************************************************/
 
@@ -816,8 +1023,6 @@ footer p {
       header button .fa-phone-volume {
             margin: 10px 10px 10px -5px;
       }
-}
-
 }
 
 /*********************************************** end mediaQery *************************************************/
