@@ -361,12 +361,10 @@ header {
       color: #06235f;
 }
 
-header .linear__btn {
-      margin: -5px -15px 0 0;
-}
+header .linear__btn {}
 
 .haed {
-      padding: 25px 0 25px;
+      padding: 15px 0 25px;
 }
 
 .align_i_c {
@@ -377,10 +375,12 @@ header .linear__btn {
       align-items: center;
 }
 
-.sots {}
+.sots {
+      margin-bottom: -4px;
+}
 
 .phone__item {
-      margin: 10px 0 -10px 0 !important;
+      margin: 6px 0 -10px 0 !important;
 }
 
 .phone__item .fa-phone {
@@ -395,7 +395,7 @@ header .linear__btn {
 }
 
 header button {
-      margin: 5px 0 -5px 0 !important;
+      margin: 0 0 -2px 0 !important;
 }
 
 /********************************************** end Header ****************************************************/
@@ -657,6 +657,20 @@ nav ul {
 
 #carouselNews .carousel-control-next {
       margin-right: -100px;
+}
+
+#news .anchorToOtherPage {
+      margin: 30px auto;
+      text-transform: uppercase;
+}
+
+#news .anchorToOtherPage a {
+      color: #84c9d8 !important;
+      text-decoration: none !important;
+}
+
+#news .anchorToOtherPage a:hover {
+      color: #06235f !important;
 }
 
 /************************************************** end news  *************************************************/
@@ -949,27 +963,48 @@ input[type="number"] {
 }
 
 #mainNews h2 {
-      padding: 50px 0;
+      padding: 50px 0 0;
       text-align: center;
-      /* border: 1px solid red; */
 }
 
 .newsItem {
       margin: 30px 0;
+      padding: 15px 0;
+      background: rgba(245, 245, 245, 0.7);
+      box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
 }
 
 .imgMainNews {
       height: 200px;
+      cursor: pointer;
 }
 
 .imgMainNews img {
-      padding: 0 30px 0 0;
+      padding: 0 30px 0 15px;
       float: left;
+}
+
+.imgMainNews b {
+      text-transform: uppercase;
+}
+
+.imgMainNews .fa-sort-down {
+      margin-bottom: 3px;
 }
 
 .txtMainNews {
       display: none;
+      transition: 0.3s all linear;
+      padding: 0 15px 30px;
 }
+
+.txtMainNews .sint_btn {
+      float: right;
+      /* margin-bottom: 30px !important; */
+}
+
+.txtMainNews {}
 
 /************************************************** end news page **********************************************/
 
