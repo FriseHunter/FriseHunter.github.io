@@ -426,6 +426,10 @@ nav ul {
       border-radius: 5px;
 }
 
+#offer_corusele li, #carousel_Video li {
+      background: none;
+}
+
 .carousel-inner {
       border-radius: 5px;
 }
@@ -693,6 +697,16 @@ nav ul {
       /* margin: 0 auto; */
 }
 
+#carousel_Video .carousel-item {
+      height: 550px;
+}
+
+#carousel_Video .b-rad {
+      min-height: 100%;
+      width: 100%;
+      max-height: 600px
+}
+
 /************************************************** end video  *************************************************/
 
 /************************************************** contacts  *************************************************/
@@ -721,7 +735,7 @@ nav ul {
 
 .call_card {
       border-radius: 5px;
-      /* margin-right: 30px; */
+      /* margin-right: 15px; */
       padding: 30px;
       background: rgba(132, 201, 216, 0.25);
       text-align: center;
@@ -743,7 +757,8 @@ nav ul {
 
 .map {
       border-radius: 5px;
-      padding: 0;
+      padding: 0 0 0 15px;
+      float: right;
 }
 
 /************************************************** end contacts  *************************************************/
@@ -1057,6 +1072,106 @@ input[type="number"] {
       }
       header button .fa-phone-volume {
             margin: 10px 10px 10px -5px;
+      }
+}
+
+@media (max-width: 1200px) {
+      .map iframe {
+            width: inherit !important;
+      }
+      #carouselNews .carousel-control-prev {
+            margin-left: 0;
+            text-align: left;
+            width: 50px;
+      }
+      #carouselNews .carousel-control-next {
+            margin-right: 0;
+            text-align: right;
+            width: 50px;
+      }
+      #carouselNews .carousel-control-prev:hover, #carouselNews .carousel-control-next:hover {
+            background: #eee;
+      }
+      #carouselNews .carousel-control-prev-icon {
+            background-image: none;
+            color: #82cada;
+            margin-right: 15px;
+            border-radius: 50px;
+      }
+      #carouselNews .carousel-control-next-icon {
+            background-image: none;
+            color: #82cada;
+            margin-left: 15px;
+            border-radius: 50px;
+      }
+      #carouselNews .fa-chevron-left, #carouselNews .fa-chevron-right {
+            font-size: 36px;
+            top: 50%;
+            left: 50%;
+      }
+      #carousel_Video .carousel-control-prev, #carousel_Video .carousel-control-next {
+            width: 75px;
+            margin: 0;
+      }
+      .equipment {
+            justify-content: space-between;
+      }
+      .equipment__card {
+            min-width: 30% !important;
+      }
+      .equipment__card button {
+            bottom: -45px;
+      }
+      .spares__card {
+            min-width: 30%;
+      }
+      #equipment_collapse p {
+            border: 0;
+            font-size: 12px;
+      }
+      .btn-link {
+            font-size: 12px;
+      }
+      #header_accord .header_item p {
+            font-size: 13px !important;
+      }
+      #equipment_collapse p {
+            border: 0;
+            font-size: 12px;
+      }
+      .descr_accord, .p_accord {
+            font-size: 16px !important;
+      }
+      .offer_accord .linear__btn {
+            font-size: 18px;
+      }
+      #spares_collapse .btn-link {
+            font-size: 16px;
+      }
+}
+
+@media (max-width: 768px) {
+      #up .phone p {
+            display: none;
+      }
+      #formBlock .linear__btn {
+            margin-top: 15px;
+      }
+      .imgNews img {
+            width: 100%;
+            padding: 15px;
+      }
+      .newsParag {
+            padding: 15px;
+      }
+      #carousel_Video .carousel-item {
+            height: 400px;
+      }
+      #spares_collapse .content_accord p {
+            font-size: 14px;
+      }
+      #spares_collapse .btn-link {
+            font-size: 14px;
       }
 }
 
