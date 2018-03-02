@@ -189,6 +189,7 @@ button::-moz-focus-inner {
 /**************************************************** My Styles ***********************************************/
 
 body {
+      font-family: PFDinTextPro, sans-serif;
       background: url('../img/backgrounds/bg_fix.png') no-repeat center center/cover;
       background-attachment: fixed;
       height: 100vh;
@@ -220,7 +221,7 @@ p {
 
 .container {
       /* border: 1px solid red; */
-      font-family: PFDinTextPro, monospace;
+      font-family: PFDinTextPro, sans-serif;
       color: #003462;
 }
 
@@ -409,7 +410,7 @@ nav {
 
 nav ul {
       text-transform: uppercase;
-      font-family: PFDinTextPro, monospace;
+      font-family: PFDinTextPro, sans-serif;
       font-weight: 700;
 }
 
@@ -545,7 +546,8 @@ nav ul {
 
 .equipment__card button {
       position: absolute;
-      margin: 0 -86px 30px !important;
+      bottom: -15px;
+      right: 35px;
 }
 
 /************************************************** end equipment  *************************************************/
@@ -624,8 +626,13 @@ nav ul {
 .spares__card button {
       border: 1px solid #06235f;
       position: absolute;
-      margin: 0 -86px 30px !important;
+      bottom: -15px;
+      left: 40px;
       background: #fff;
+}
+
+#spares .anchorToOtherPage a {
+      color: #003462 !important;
 }
 
 /************************************************** end spares  *************************************************/
@@ -719,6 +726,8 @@ nav ul {
 .contacts_line p {
       font-size: 17.3px !important;
       color: inherit;
+      margin: 15px -15px !important;
+      text-align: center;
 }
 
 .contacts {
@@ -1057,7 +1066,7 @@ input[type="number"] {
       }
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1199.98px) {
       header button {
             text-align: center;
             line-height: inherit;
@@ -1075,7 +1084,7 @@ input[type="number"] {
       }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
       .map iframe {
             width: inherit !important;
       }
@@ -1120,10 +1129,16 @@ input[type="number"] {
             min-width: 30% !important;
       }
       .equipment__card button {
-            bottom: -45px;
+            bottom: -15px;
+            left: 52px;
+            /* margin: 0 auto; */
       }
       .spares__card {
             min-width: 30%;
+      }
+      .spares__card button {
+            bottom: -15px;
+            left: 52px;
       }
       #equipment_collapse p {
             border: 0;
@@ -1148,12 +1163,44 @@ input[type="number"] {
       #spares_collapse .btn-link {
             font-size: 16px;
       }
+      .contacts_line p {
+            text-align: left;
+      }
+      .contacts_line {
+            flex-direction: column;
+            justify-content: space-around;
+            width: 500px;
+            margin: 15px auto;
+            padding: 15px;
+            background: rgba(132, 201, 216, 0.25);
+            box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+      }
+      .contacts_line .mr-auto, .contacts_line .mr-auto {
+            margin: 0 !important;
+      }
+      .contacts_line div {
+            max-width: 100%;
+      }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999.98px) {
       #up .phone p {
             display: none;
       }
+      .sots {
+            min-width: 50%;
+            justify-content: space-around !important;
+      }
+      .phone {
+            max-width: 10%;
+      }
+      .logo {
+            max-width: 40%;
+      }
+}
+
+@media (max-width: 991.98px) {
       #formBlock .linear__btn {
             margin-top: 15px;
       }
@@ -1172,6 +1219,90 @@ input[type="number"] {
       }
       #spares_collapse .btn-link {
             font-size: 14px;
+      }
+      .equipment__card, .spares__card {
+            min-width: 45% !important;
+      }
+      .equipment__card button, .spares__card button {
+            bottom: -15px;
+            left: 22.5%;
+      }
+}
+
+@media (max-width: 767.98px) {
+      .equipment__card button, .spares__card button {
+            bottom: -15px;
+            left: 13.5%;
+      }
+      .inputs, .contacts input, .form button {
+            max-width: 58%;
+            margin: 15px;
+      }
+      .call_card {
+            max-width: 500px;
+            margin: auto;
+      }
+      .map {
+            max-width: 500px;
+            margin: 15px auto;
+            min-height: 340px;
+            float: none;
+            padding: 0;
+      }
+      .align_i_c {
+            margin: 0;
+      }
+      .align_i_c {
+            margin: 25px auto 15px;
+      }
+}
+
+@media (max-width: 575.98px) {
+      .logo {
+            min-width: 100%;
+            text-align: center;
+      }
+      .sots {
+            max-width: 80%;
+            /* min-width: 70%; */
+      }
+      header .linear__btn {
+            /* margin: 0 -0 3px 0.5em !important; */
+      }
+      .equipment__card, .spares__card {
+            max-width: 58.5% !important;
+      }
+      .equipment__card button, .spares__card button {
+            bottom: -15px;
+            left: 23.5%;
+      }
+      .oneSlide {
+            max-width: 86%;
+            min-width: 80%;
+            margin: 0 auto;
+      }
+      .contacts_line {
+            margin-left: 0;
+            width: auto;
+      }
+      .call_card {
+            max-width: 95%;
+            text-align: center;
+            margin: 0 auto;
+      }
+      .contacts_line {
+            width: auto;
+      }
+      .map {
+            max-width: 530px;
+            margin: 15px 10px;
+            min-height: 340px;
+            float: none;
+            padding: 0;
+      }
+      .equipment__card button, .spares__card button {
+            left: 50%;
+            margin-left: -88px;
       }
 }
 
