@@ -365,7 +365,7 @@ header {
 header .linear__btn {}
 
 .haed {
-      padding: 15px 0 25px;
+      padding: 15px 0;
 }
 
 .align_i_c {
@@ -548,6 +548,10 @@ nav ul {
       position: absolute;
       bottom: -15px;
       right: 35px;
+}
+
+.equipment__card p, .spares__card p {
+      padding: 5px 0 15px 0;
 }
 
 /************************************************** end equipment  *************************************************/
@@ -1235,8 +1239,11 @@ input[type="number"] {
             left: 13.5%;
       }
       .inputs, .contacts input, .form button {
-            max-width: 58%;
+            max-width: 90%;
             margin: 15px;
+      }
+      .call_card button, .call_card input {
+            width: 90%;
       }
       .call_card {
             max-width: 500px;
@@ -1249,28 +1256,51 @@ input[type="number"] {
             float: none;
             padding: 0;
       }
-      .align_i_c {
-            margin: 0;
+      .head .align_i_c {
+            margin: 0 -10px !important;
       }
-      .align_i_c {
+      .quality_item .align_i_c {
             margin: 25px auto 15px;
       }
 }
 
 @media (max-width: 575.98px) {
+      h2 {
+            font-size: 28px;
+      }
+      h3 {
+            font-size: 22px;
+      }
+      h4 {
+            font-size: 18px;
+      }
+      p, .newsParag {
+            font-size: 13px;
+            line-height: 14px;
+      }
+      .button_Up {
+            width: 64px;
+            height: 64px;
+            bottom: 5px;
+            right: 5px;
+      }
+      .button_Up p {
+            font-size: 52.5px !important;
+            padding-top: 5.5px;
+      }
       .logo {
             min-width: 100%;
             text-align: center;
       }
       .sots {
             max-width: 80%;
-            /* min-width: 70%; */
       }
-      header .linear__btn {
-            /* margin: 0 -0 3px 0.5em !important; */
-      }
+      header .linear__btn {}
       .equipment__card, .spares__card {
             max-width: 58.5% !important;
+      }
+      .equipment__card h4, .spares__card h4 {
+            font-size: 20px;
       }
       .equipment__card button, .spares__card button {
             bottom: -15px;
@@ -1300,9 +1330,34 @@ input[type="number"] {
             float: none;
             padding: 0;
       }
+      .equipment__card, .spares__card {
+            max-width: 75% !important;
+      }
       .equipment__card button, .spares__card button {
             left: 50%;
             margin-left: -88px;
+      }
+      .equipment__card p, .spares__card p {
+            font-size: 13px;
+            line-height: 14px;
+      }
+      .row {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+      }
+}
+
+@media (max-width: 424.98px) {
+      .inputs__team button, .call_card button {
+            font-size: 15px;
+      }
+}
+
+@media (max-width: 374.98px) {
+      .equipment__card .sint_btn, .spares__card .sint_btn {
+            padding: 1px 15px;
+            left: 50%;
+            margin-left: -66px;
       }
 }
 
