@@ -864,12 +864,20 @@ footer p {
       padding-bottom: 30px;
 }
 
+.d_block_sm {
+      display: none;
+}
+
 /************************************************** end equipment page *************************************************/
 
 /************************************************** spares page *************************************************/
 
 #equipment_collapse h4 {
       margin: 50px auto;
+}
+
+#spares_collapse h4 {
+      margin: 15px 0;
 }
 
 .spares_accordion .card {
@@ -1231,6 +1239,59 @@ input[type="number"] {
             bottom: -15px;
             left: 22.5%;
       }
+      .d_none {
+            display: none;
+      }
+      .content_accord .btn-link {
+            font-size: 10px;
+      }
+      .btn {
+            padding: 0;
+      }
+      .content_accord h5 {
+            width: 1em;
+      }
+      .content_accord p {
+            font-size: 10px !important;
+      }
+      .card-header {
+            padding: 15px 0 !important;
+      }
+      .card .header_item {
+            padding: 0;
+      }
+      .offer_accord h2 {
+            font-size: 18px;
+      }
+      .offer_accord .linear__btn {
+            font-size: 13px;
+            padding: 0 10px;
+            margin-top: 15px;
+            width: 100%;
+      }
+      .newsItem {
+            margin: 30px 0 0;
+      }
+      .spares_accordion .form td {
+            font-size: 15px;
+      }
+      .spares_accordion .form input {
+            font-size: 15px;
+      }
+      .zebra_blue .form {
+            margin: 0 3.3% !important;
+      }
+      #spares_collapse .content_accord p {
+            font-size: 14px !important;
+      }
+      .modal-body input, .modal-body button {
+            margin: 15px auto;
+            min-width: 80%;
+            max-width: 80%;
+      }
+      .modal-body button {
+            font-size: 16px;
+      }
 }
 
 @media (max-width: 767.98px) {
@@ -1261,6 +1322,37 @@ input[type="number"] {
       }
       .quality_item .align_i_c {
             margin: 25px auto 15px;
+      }
+      #spares_collapse .content_accord p {
+            font-size: 10px !important;
+      }
+      .spares_accordion .form td {
+            font-size: 10px;
+      }
+      .spares_accordion .form input {
+            font-size: 10px;
+      }
+      .zebra_blue .form {
+            margin: 0 2% !important;
+      }
+      input[type="number"] {
+            width: 20px !important;
+      }
+      .checkbox__text:before {
+            width: 30px;
+            height: 16px;
+            top: -4px;
+      }
+      .checkbox__text:after {
+            width: 12px;
+            height: 12px;
+            top: -2px;
+      }
+      .checkbox input:checked+.checkbox__text:after {
+            left: 16px;
+      }
+      .checkbox {
+            width: 18px;
       }
 }
 
@@ -1345,11 +1437,113 @@ input[type="number"] {
             margin-left: 0px !important;
             margin-right: 0px !important;
       }
+      .description {
+            min-width: 100%;
+            margin: 0 auto;
+      }
+      .description ul {
+            margin: 15px 0 15px 15px !important;
+      }
+      .d_block_sm {
+            display: block;
+            margin-top: 15px
+      }
+      .d_block_sm b {
+            min-width: 80%;
+            display: inline-block;
+      }
+      .d_none_sm {
+            display: none;
+      }
+      table .d_block_sm {
+            margin-top: 0;
+      }
+      #header_accord {
+            display: none;
+      }
+      #equipment_collapse .card-header p {
+            display: none;
+      }
+      #equipment_collapse .card-header .btn-link {
+            font-size: 14px;
+      }
+      #equipment_collapse .img_accord {
+            min-width: 50%;
+            margin: 0 auto;
+      }
+      #equipment_collapse .offer_accord {
+            min-width: 50%;
+            text-align: center;
+            margin: 15px auto;
+      }
+      .imgMainNews {
+            height: 150px;
+      }
+      .imgMainNews img {
+            max-width: 70%;
+      }
+      #spares_collapse .btn-link {
+            font-size: 10px;
+      }
+      .spares_accordion .form td {
+            padding: 10px 5px;
+            border-radius: 5px;
+            font-size: 10px;
+      }
+      .spares_accordion .form input {
+            font-size: 10px;
+            margin-left: auto;
+            margin-right: auto;
+      }
+      .spares_accordion .form td {
+            padding: 10px 5px;
+            border-radius: 5px;
+      }
+}
+
+@media (min-width: 425px) and (max-width: 444px) {
+      .zebra_blue .form {
+            margin: 0 0 0 -1.25% !important;
+      }
 }
 
 @media (max-width: 424.98px) {
       .inputs__team button, .call_card button {
             font-size: 15px;
+      }
+      #equipment_collapse .img_accord {
+            min-width: 100%;
+            text-align: center;
+      }
+      #equipment_collapse .offer_accord {
+            min-width: 85%;
+      }
+      #equipment_collapse .offer_accord .linear__btn {
+            font-size: 18px;
+      }
+      .d_block_sm b {
+            min-width: 75%;
+      }
+      .d_block_sm {
+            font-size: 10px;
+      }
+      .imgMainNews {
+            height: 120px;
+      }
+      .d_none_xs {
+            display: none;
+      }
+      .zebra_blue .form {
+            margin: 0 auto !important;
+      }
+      #spares_collapse .btn-link {
+            font-size: 9px;
+      }
+      #spares_collapse .content_accord p {
+            font-size: 9px !important;
+      }
+      #spares_collapse .container {
+            margin: 0;
       }
 }
 
@@ -1358,6 +1552,24 @@ input[type="number"] {
             padding: 1px 15px;
             left: 50%;
             margin-left: -66px;
+      }
+      .d_block_sm {
+            font-size: 8px;
+      }
+      .d_block_sm b {
+            min-width: auto;
+      }
+      .imgMainNews {
+            height: 100px;
+      }
+      #spares_collapse .btn-link {
+            font-size: 7px;
+      }
+      #spares_collapse .content_accord p {
+            font-size: 7px !important;
+      }
+      .spares_accordion .form button {
+            font-size: 15px;
       }
 }
 
