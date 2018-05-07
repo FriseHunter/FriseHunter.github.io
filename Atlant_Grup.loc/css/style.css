@@ -1,0 +1,489 @@
+/* --------------- reset.css --------------- */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      /* обнуляем отступы и убираем бордюры */
+      vertical-align: baseline;
+      /* приводим все к одной базовой линии */
+      background: transparent;
+      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+      font-size: 100%;
+      /* размер шрифта всем одинаковый */
+}
+
+a {
+      /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+      margin: 0;
+      padding: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+      outline: 0 !important;
+}
+
+table {
+      /* устраняем отступы между ячейками таблицы */
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+td, td img {
+      vertical-align: top;
+      /* возвращаем привычное вертикальное выравнивание */
+}
+
+input, select, button, textarea {
+      margin: 0;
+      /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+      font-size: 100%;
+      /* делаем размер шрифтов везде одинаковым */
+      outline: none;
+}
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"], textarea {
+      padding: 0 20px!important;
+      -moz-padding: 0 0 5px 20px;
+      /* убираем внутренние отступы для текстовых полей */
+}
+
+input[type="checkbox"] {
+      /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+      vertical-align: bottom;
+}
+
+input[type="radio"] {
+      vertical-align: text-bottom;
+}
+
+sub {
+      vertical-align: sub;
+      font-size: smaller;
+}
+
+sup {
+      vertical-align: super;
+      font-size: smaller;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+}
+
+nav ul {
+      list-style: none;
+}
+
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+
+html {
+      min-height: 100%;
+      /* всегда показываем вертикальную полосу прокрутки  */
+}
+
+body {
+      color: #fff;
+      text-align: left;
+      font-size: 1em;
+      /* используем безопасные шрифтовые CSS стеки */
+      min-height: 100%;
+}
+
+a, a:visited {
+      /* порядок правил для ссылок имеет значение */
+      color: #fff !important;
+      text-decoration: none;
+      outline: 0 !important;
+}
+
+a:hover {
+      color: #C6FFFF !important;
+      text-decoration: none;
+}
+
+a:focus, a:active {
+      color: #B9C0DE !important;
+      text-decoration: none;
+      outline: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+/**********************my classes****************************/
+section{
+	padding: 90px 0 90px;
+}
+h1{
+	font-size: 40px;
+	color: #f5f3f3;
+}
+h2{
+	font-size: 30px;
+}
+p{
+	font-size: 24px;
+}
+.m_h_150{
+	min-height: 115px;
+}
+
+.f_w_reg{
+	font-weight: 400;
+}
+.f_w_bold{
+	font-weight: 500;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt40{
+	margin-top: 40px;
+}
+.fz30{
+	font-size: 30px;
+}
+.txtTransNone{
+	text-transform: none;
+}
+.nav_bg{
+	background: rgba(15,22,52, 0.7);
+}
+.nav_cont{
+	text-align: right;
+}
+.fl_invert{
+  filter: invert(1);
+}
+.loto_num{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 60px;
+}
+/**********************my classes end************************/
+
+body{
+	background: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+	
+}
+/**********************header *******************************/
+
+nav{
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0!important;
+	margin: 0;
+}
+.navbar-brand{
+	padding: 0;
+	margin: 0;
+}
+nav p{
+	font-size: 16px;
+}
+/**********************header end*******************************/
+/**********************main *******************************/
+.main{
+	background:url(../img/bg/BG_first_display.jpg)no-repeat center center / cover;
+}
+.offer{
+	padding-right: 100px;
+	padding-left: 100px;
+	margin:170px auto 40px;
+}
+.offer_des{
+	width: 450px;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: .05rem;
+}
+.button_linear, .button_linear:visited{
+	cursor: pointer;
+	padding: 20px 40px;
+	border: 1px solid  #fff;
+	background: none;
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+	margin: 35px auto 120px;
+	transition: all 0.3s linear;
+}
+.button_linear:hover{
+	background: #fff;
+	color: #0F1634!important;
+	border: 1px solid #fff;
+}
+.button_linear:active{
+	background: #0F1634;
+	color: #fff!important;
+	border: 1px solid #0F1634;
+}
+/**********************main end****************************/
+/**********************types_of_jobs***********************/
+.types_of_jobs{
+	color:#000;
+	background:url(../img/bg/BG_second_display.jpg)no-repeat center center / cover;
+}
+.types_of_jobs h2{
+	margin-bottom: 70px;
+}
+.jobs_card{
+	text-align: center;
+}
+.jobs_card_img{
+	width: inherit;
+	box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.30);
+}
+.jobs_card_description{
+	padding: 40px 35px 0;
+}
+/**********************types_of_jobs en***********************/
+/**********************quality *******************************/
+.quality{
+	background:url(../img/bg/BG_three_display.jpg)no-repeat center center / cover;
+}
+.quality_block{
+	text-align: center;
+}
+.quality_block p{
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.quality_caption{
+	margin-bottom: 70px;
+}
+/**********************quality end****************************/
+/**********************our_projects **************************/
+.our_projects{
+	background:url(../img/bg/BG_fourth_display.jpg)no-repeat center center / cover;
+}
+.project_caption{
+	margin-bottom: 55px;
+	color: #000;
+}
+.project_slider_card{
+	background:#eee;
+	text-align:center;
+	margin:15px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.51);
+	max-width: 30%
+
+}
+.project_slider_card img{
+	padding:15px;
+}
+.project_slider_card p{
+	font-size: 15px;
+	color: #0F1634;
+	width: 85%;
+	margin: 0 auto;
+}
+.carousel-control-prev{
+	width: 7%;
+}
+.carousel-control-next{
+	width: 7%;
+}
+
+
+/**********************our_projects end***********************/
+/*******************atlant_group_in_numbers*******************/
+.atlant_group_in_numbers{
+	background:url(../img/bg/BG_fiveth_display.jpg)no-repeat center center / cover;
+}
+.atlant_group_in_numbers h2{
+	margin-bottom: 70px;
+}
+.circles {
+  margin-bottom: -10px;
+}
+
+.circle {
+  width: 100px;
+  margin: 6px 6px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.circle canvas {
+  vertical-align: top;
+}
+
+.circle strong {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 90px;
+  font-family:'Lato', sans-serif;
+}
+
+.fourth strong{
+	font-size: 55px;
+}
+.fiveth strong{
+	font-size: 45px;
+}
+.sixth strong{
+	font-size: 60px;
+}
+
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+.circle strong p{
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.circle span {
+	text-transform: uppercase;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 12px;
+  font-weight: bold;
+  margin-top: 25px;
+  letter-spacing: 2px;
+}
+/****************atlant_group_in_numbers end******************/
+/*************************schedule ***************************/
+.schedule{
+	background:url(../img/bg/BG_sixth_display.jpg)no-repeat center center / cover;
+	
+}
+.schedule_caption{
+	color: #000;
+}
+.schedule_img{
+	margin-top: 70px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.51);
+}
+/***********************schedule end *************************/
+/***********************guarantees ***************************/
+.guarantees{
+	background:url(../img/bg/BG_seventh_display.jpg)no-repeat center center / cover;
+}
+.all_guarantees{
+	margin-top: 70px;
+}
+.all_guarantees_items:nth-child(2), .all_guarantees_items:nth-child(7){
+	margin-left: 95px;
+}
+.all_guarantees_items:nth-child(3), .all_guarantees_items:nth-child(6){
+	margin-left: 205px;
+}
+.all_guarantees_items:nth-child(4), .all_guarantees_items:nth-child(5){
+	margin-left: 315px;
+}
+
+.all_guarantees_num{
+	max-width: 90px;
+	max-height: 90px;
+	color:#0F1634;
+	background: #e4e4e4;
+	text-align: center;
+	margin: 20px 20px 0 20px;
+}
+.all_guarantees_descript{
+	background: #1e2e76;
+	max-width: 490px;
+	max-height: 90px;
+	margin: 20px 20px 0 0;
+	font-size: 20px;
+	line-height: 24px;
+	display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.all_guarantees_descript p{
+	margin: 0 20px;
+}
+/***********************guarantees end ***********************/
+/***********************our_partners *************************/
+.our_partners{
+	background: #f9f9f9;
+	
+}
+/***********************our_partners end**********************/
+/***********************our_contacts**************************/
+.our_contacts{
+	background:url(../img/bg/BG_eigth_display.jpg)no-repeat center center / cover;
+}
+.contact_items{
+	margin: 0 auto;
+	text-align: center;
+}
+.one_contact{
+	letter-spacing: 4px;
+}
+/***********************our_contacts end**********************/
+/****************************footer***************************/
+footer{
+	background: #0f1634;
+	padding-top: 50px;
+}
+.copyright{
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	text-align: center;
+	padding: 30px 0 15px;
+	letter-spacing: 1px;
+}
+/**************************footer end*************************/
+/*****************************modal***************************/
+.modal-header{
+	/*border: none;*/
+}
+.modal-content{
+	color:#000;
+	padding: 25px;
+}
+.modal-body p{
+	font-size: 18px;
+	margin-top: 25px;
+}
+.modal-content h5{
+	text-align: right;
+	margin: 0 0 0 auto;
+	text-transform: none;
+	font-size: 24px;
+	color:#1e2e76;
+	font-weight: 400;
+
+}
+.mini_caption{
+	padding: 7px 15px;
+	color:#fff;
+	background: #1e2e76;
+}
+.modal-lg{
+	    max-width: 1170px;
+}
+/***************************modal end*************************/
