@@ -141,7 +141,7 @@ $(window).scroll(function(){
  
 $(document).ready(function(){
   //ancors of main menu & landing buttons
-  $("#menu, #head_logo, #offer_button").on("click","a", function (event) {
+  $("#menu, #head_logo, #offer_button, #footer_menu, #footer_logo").on("click","a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
 
