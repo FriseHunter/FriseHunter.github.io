@@ -136,3 +136,23 @@ $(window).scroll(function(){
     "transform" : 'translate(0%,' + st /7.5 + '%)'
   });
 });
+
+// Плавный скрол**********************
+ 
+$(document).ready(function(){
+  //ancors of main menu & landing buttons
+  $("#menu, #head_logo, #offer_button").on("click","a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+
+});

@@ -272,14 +272,16 @@
 			<nav class="navbar navbar-expand-lg navbar-dark nav_bg fixed-top">
 				<div class="container">
 					<div class="row w-100 no-gutters">
-						<a class="color_white navbar-brand" href="#"><img class="head-logo" src="img/logos/logo.png"></a>
+						<div id="head_logo">
+						<a class="color_white navbar-brand" href="#main"><img class="head-logo" src="img/logos/logo.png"></a>
+						</div>
 						<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div id="menu" class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav ml-auto mr-auto">
 								<li class="nav-item">
-									<a class="color_white nav-link" href="#">главная</a>
+									<a class="color_white nav-link" href="#main">главная</a>
 								</li>
 								<li class="nav-item">
 									<a class="color_white nav-link" href="#types_of_jobs">деятельность</a>
@@ -304,7 +306,7 @@
 				</div>
 			</nav>
 		</header>
-		<section class="main">
+		<section id="main" class="main">
 			<div class="container">
 				<div class="row">
 					<div class="offer">
@@ -313,8 +315,8 @@
 					<div class="offer_des ml-auto mr-auto">
 						<p>Проектирование, монтаж и поставка систем отопления, водоснабжения, водоочистки, канализации. Строительство бассейнов.</p>
 					</div>
-					<div class="offer_button w-100 d-flex justify-content-center">
-						<a class="button_linear" href="#">узнать подробнее</a>
+					<div id="offer_button" class="offer_button w-100 d-flex justify-content-center">
+						<a class="button_linear" href="#types_of_jobs">узнать подробнее</a>
 					</div>
 					
 				</div>
