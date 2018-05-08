@@ -257,6 +257,10 @@ nav p{
 .quality_block{
 	text-align: center;
 }
+
+.quality_block img{
+}
+
 .quality_block p{
 	text-transform: uppercase;
 	font-size: 18px;

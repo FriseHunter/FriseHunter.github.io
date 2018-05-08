@@ -119,4 +119,20 @@ $(window).scroll(function(par){
     $(this).find('strong').html(Math.round(1000 * progress) + "<p>БОЛЕЕ</p>");
   });
 
+
+
+});
+
+$(window).scroll(function(){
+
+  var st = $(this).scrollTop();
+  $('.offer').css({
+    "transform" : 'translate(0%,' + st /2.5 + '%)'
+  });
+  $('.offer_des').css({
+    "transform" : 'translate(0%,' + st /5 + '%)'
+  });
+  $('.offer_button').css({
+    "transform" : 'translate(0%,' + st /7.5 + '%)'
+  });
 });

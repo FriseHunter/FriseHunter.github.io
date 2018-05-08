@@ -7,6 +7,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css" class="css">
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<!-- jQuery -->
@@ -342,24 +343,24 @@
 			</div>
 		</section>
 		<section class="quality">
-			<div class="container">
+			<div class="container quality_item">
 				<div class="row">
 					<h2 class="quality_caption w-100">почему нам доверяют</h2>
 					<div class="quality_block col-3">
-						<img src="img/icons/ICON_1.png" alt="" class="ml-auto mr-auto">
-						<p>Эксклюзивные решения</p>
+						<img src="img/icons/ICON_1.png" alt="" class="ml-auto mr-auto animated movLeft">
+						<p class="qual_desc_paral">Эксклюзивные решения</p>
 					</div>
 					<div class="quality_block col-3">
-						<img src="img/icons/ICON_2.png" alt="" class="ml-auto mr-auto">
-						<p>Эффективное проектирование</p>
+						<img src="img/icons/ICON_2.png" alt="" class="ml-auto mr-auto animated movUp">
+						<p class="qual_desc_paral">Эффективное проектирование</p>
 					</div>
 					<div class="quality_block col-3">
-						<img src="img/icons/ICON_3.png" alt="" class="ml-auto mr-auto">
-						<p>Профессиональный монтаж</p>
+						<img src="img/icons/ICON_3.png" alt="" class="ml-auto mr-auto animated movUp">
+						<p class="qual_desc_paral">Профессиональный монтаж</p>
 					</div>
 					<div class="quality_block col-3">
-						<img src="img/icons/ICON_4.png" alt="" class="ml-auto mr-auto">
-						<p>Удобное гарантийное и  постгарантийное обслуживание</p>
+						<img src="img/icons/ICON_4.png" alt="" class="ml-auto mr-auto animated movRight">
+						<p class="qual_desc_paral">Удобное гарантийное и  постгарантийное обслуживание</p>
 					</div>
 				</div>
 			</div>
@@ -505,35 +506,35 @@
 					<div class="row">
 						<h2 class="guarantees_caption w-100">а еще вы гарантированно получаете</h2>
 						<div class="all_guarantees col-lg offset-lg-1">
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_1">
 								<div class="all_guarantees_num col loto_num">1</div>
 								<div class="all_guarantees_descript col"><p>Бесплатный предварительный проект системы</p></div>
 							</div>
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_2">
 								<div class="all_guarantees_num col loto_num">2</div>
 								<div class="all_guarantees_descript col"><p>От 3-х вариантов комплектации системы</p></div>
 							</div>
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_3">
 								<div class="all_guarantees_num col loto_num">3</div>
 								<div class="all_guarantees_descript col"><p>Бесплатная консультация и участие в разработке проекта стороннего проектного бюро</p></div>
 							</div>
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_4">
 								<div class="all_guarantees_num col loto_num">4</div>
 								<div class="all_guarantees_descript col"><p>Все согласования с  государственными органами за наш счет</p></div>
 							</div>
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_1">
 								<div class="all_guarantees_num col loto_num">5</div>
 								<div class="all_guarantees_descript col"><p>Отчет состояния здания на предмет теплопотерь</p></div>
 							</div>
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_2">
 								<div class="all_guarantees_num col loto_num">6</div>
 								<div class="all_guarantees_descript col"><p>Бесплатное гарантийное обслуживание</p></div>
 							</div>
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_3">
 								<div class="all_guarantees_num col loto_num">7</div>
 								<div class="all_guarantees_descript col"><p>Постгарантийное обслуживание со скидкой 40%</p></div>
 							</div>
-							<div class="all_guarantees_items row">
+							<div class="all_guarantees_items row animated movLeft_4">
 								<div class="all_guarantees_num col loto_num">8</div>
 								<div class="all_guarantees_descript col"><p>Расчет оптимизации  расходов на эксплуатацию системы</p></div>
 							</div>
@@ -591,7 +592,7 @@
 		</section>
 		<section id="our_contacts" class="our_contacts">
 			<div class="container">
-				<div class="main_contacts row">
+				<div class="main_contacts row animated movUp">
 					<h2 class="col-lg-12">Контакты</h2>
 					<div class="contact_items col-lg-12">
 						<p class="one_contact fz30 mt30"><img src="img/contacts_icons/ic_local_phone_black_48dp.png" alt=""">
@@ -651,6 +652,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<!-- animated.js -->
+		<script src="js/animated.js"></script>
 		<!-- plagin circle-progress -->
 		<script src="js/circle-progress.js"></script>
 		<!-- main.js -->
