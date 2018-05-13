@@ -3,7 +3,7 @@ $(window).scroll(function(par){
 	// first progress bar**************************************************
 	
 	  $('.after.first.circle').circleProgress({
-    value: 0.25,
+    value: 1.0,
     thickness: '12',
     size: 195.0,
     animation: {
@@ -22,7 +22,7 @@ $(window).scroll(function(par){
   	// second progress bar*************************************************
   	
 	  $('.after.second.circle').circleProgress({
-    value: 0.1243,
+    value: 1.0,
     thickness: '12',
     size: 195.0,
     animation: {
@@ -42,7 +42,7 @@ $(window).scroll(function(par){
   	// threed progress bar*************************************************
 	
 	  $('.after.threed.circle').circleProgress({
-    value: 0.01,
+    value: 1.0,
     thickness: '12',
     size: 195.0,
     animation: {
@@ -62,7 +62,7 @@ $(window).scroll(function(par){
 	// fourth progress bar*************************************************
 	
 	  $('.after.fourth.circle').circleProgress({
-    value: 0.25,
+    value: 1.0,
     thickness: '12',
     size: 195.0,
     animation: {
@@ -82,7 +82,7 @@ $(window).scroll(function(par){
   	// fiveth progress bar*************************************************
 	
 	  $('.after.fiveth.circle').circleProgress({
-   value: 0.1,
+   value: 1.0,
     thickness: '12',
     size: 195.0,
     animation: {
@@ -102,7 +102,7 @@ $(window).scroll(function(par){
   	// sixth progress bar**************************************************
 	
 	  $('.after.sixth.circle').circleProgress({
-       value: 0.025,
+       value: 1.0,
     thickness: '12',
     size: 195.0,
     animation: {
