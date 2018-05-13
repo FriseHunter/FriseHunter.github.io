@@ -126,15 +126,15 @@ $(window).scroll(function(par){
 $(window).scroll(function(){
 
   var st = $(this).scrollTop();
-  $('.offer').css({
-    "transform" : 'translate(0%,' + st /2.5 + '%)'
+  $('.main_offer').css({
+    "transform" : 'translate(0%,' + st /25 + '%)'
   });
-  $('.offer_des').css({
-    "transform" : 'translate(0%,' + st /5 + '%)'
-  });
-  $('.offer_button').css({
-    "transform" : 'translate(0%,' + st /7.5 + '%)'
-  });
+  // $('.offer_des').css({
+  //   "transform" : 'translate(0%,' + st /5 + '%)'
+  // });
+  // $('.offer_button').css({
+  //   "transform" : 'translate(0%,' + st /7.5 + '%)'
+  // });
 });
 
 // Плавный скрол**********************
@@ -154,5 +154,14 @@ $(document).ready(function(){
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 1500);
   });
-
+  
+            $('.toAnchor').on('click', function() {
+                  $('.navbar-collapse').removeClass('show');
+                  $a = $($(this).attr('href'));
+                  $('html,body').animate({
+                        scrollTop: $a.offset().top - 50
+                  }, 500);
+                  return false;
+            });
+      
 });
