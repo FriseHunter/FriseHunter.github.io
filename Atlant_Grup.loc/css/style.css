@@ -199,12 +199,8 @@ nav p{
 .main{
 	background:url(../img/bg/BG_first_display.jpg)no-repeat center center / cover;
 }
-/*.main_offer{
-	max-width: 400px;
-}*/
-	.offer{
-		/*padding-right: 100px;
-		padding-left: 100px;*/
+
+.offer{
 	margin:170px auto 40px;
 }
 .offer_des{
@@ -592,11 +588,15 @@ footer{
 		margin-top: 15px;
 	}
 	.nav_cont p{
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.head-logo{
 		width: 100%;
 	}
+	.footer-logo{
+		width: 60%;
+	}
+
 	.one_contact img{
 	width: 16px;
     vertical-align: middle;
