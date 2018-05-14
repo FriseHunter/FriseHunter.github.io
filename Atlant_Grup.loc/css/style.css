@@ -523,6 +523,9 @@ footer{
 		letter-spacing:0;
 		line-height: 24px;
 	}
+	.types_of_jobs,.quality{
+		padding-bottom: 15px;
+	}
 	.jobs_card_description, .quality_block p {
 		margin-bottom: 50px;
 	}
