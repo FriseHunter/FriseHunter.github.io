@@ -7,7 +7,7 @@ $(window).scroll(function(par){
     thickness: '12',
     size: 195.0,
     animation: {
-      duration: 750,
+      duration: 2500,
       easing: 'circleProgressEasing'
     },
     fill:{ 
@@ -26,7 +26,7 @@ $(window).scroll(function(par){
     thickness: '12',
     size: 195.0,
     animation: {
-      duration: 750,
+      duration: 2500,
       easing: 'circleProgressEasing'
     },
     fill:{ 
@@ -46,7 +46,7 @@ $(window).scroll(function(par){
     thickness: '12',
     size: 195.0,
     animation: {
-      duration: 750,
+      duration: 2500,
       easing: 'circleProgressEasing'
     },
     fill:{ 
@@ -66,7 +66,7 @@ $(window).scroll(function(par){
     thickness: '12',
     size: 195.0,
     animation: {
-      duration: 750,
+      duration: 2500,
       easing: 'circleProgressEasing'
     },
     fill:{ 
@@ -86,7 +86,7 @@ $(window).scroll(function(par){
     thickness: '12',
     size: 195.0,
     animation: {
-      duration: 750,
+      duration: 2500,
       easing: 'circleProgressEasing'
     },
     fill:{ 
@@ -106,7 +106,7 @@ $(window).scroll(function(par){
     thickness: '12',
     size: 195.0,
     animation: {
-      duration: 750,
+      duration: 2500,
       easing: 'circleProgressEasing'
     },
     fill:{ 
@@ -129,12 +129,6 @@ $(window).scroll(function(){
   $('.main_offer').css({
     "transform" : 'translate(0%,' + st /25 + '%)'
   });
-  // $('.offer_des').css({
-  //   "transform" : 'translate(0%,' + st /5 + '%)'
-  // });
-  // $('.offer_button').css({
-  //   "transform" : 'translate(0%,' + st /7.5 + '%)'
-  // });
 });
 
 // Плавный скрол**********************
