@@ -523,6 +523,9 @@ footer{
 		letter-spacing:0;
 		line-height: 24px;
 	}
+	.jobs_card_description, .quality_block p {
+		margin-bottom: 50px;
+	}
 	.project_slider_card{
 		max-width: 100%;
 		/*margin: 0;*/
