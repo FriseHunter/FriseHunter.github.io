@@ -127,7 +127,10 @@ $(window).scroll(function(){
 
   var st = $(this).scrollTop();
   $('.main_offer').css({
-    "transform" : 'translate(0%,' + st /25 + '%)'
+    "transform" : 'translate(0%,' + st /25 + '%)',
+    "-webkit-transform" : 'translate(0%,' + st /25 + '%)',
+    "-ms-transform" : 'translate(0%,' + st /25 + '%)',
+    "-o-transform"  : 'translate(0%,' + st /25 + '%)'
   });
 });
 

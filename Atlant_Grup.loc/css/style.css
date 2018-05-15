@@ -182,7 +182,6 @@ nav{
 	font-size: 16px;
 	text-transform: uppercase;
 	color: #fff;
-	/*margin: 0;*/
 }
 .navbar-brand{
 	padding: 0;
@@ -208,6 +207,10 @@ nav p{
 	font-weight: bold;
 	letter-spacing: .05rem;
 }
+.offer_button{
+	text-align: center;
+	margin: 55px auto 120px;
+}
 .button_linear, .button_linear:visited{
 	cursor: pointer;
 	padding: 20px 40px;
@@ -217,7 +220,7 @@ nav p{
 	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: .05rem;
-	margin: 35px auto 120px;
+	
 	transition: all 0.3s linear;
 }
 .button_linear:hover{
@@ -531,7 +534,6 @@ footer{
 	}
 	.project_slider_card{
 		max-width: 100%;
-		/*margin: 0;*/
 	}
 
 	.all_guarantees_items{
